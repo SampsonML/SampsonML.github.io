@@ -12,4 +12,5 @@ My name is Matt Sampson, and I am a final year undergraduate student studying a 
 ### Computational Mathematics
 
 ## Other Interests
-#### Synthwave music
+### Synthwave music
+### Game Design
