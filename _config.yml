@@ -1,6 +1,6 @@
 theme: jekyll-theme-hacker
 title: Matt Sampson <br> I like astrophysics <br> I like mathematics  <br> I like computer
-logo: "<img src="Face.jpeg" height="200"> "  "<img src="Galaxy.jpg" height="200">"   "<img src="Computer.jpg" height="200">"  
+logo: <img src="Face.jpeg" height="200">   <img src="Galaxy.jpg" height="200">   <img src="Computer.jpg" height="200">  
 email: matthew.sampson@connect.qut.edu.au
 
-avatar: "<img src="Face.jpeg" height="200">" 
+avatar: <img src="Face.jpeg" height="200"> 
