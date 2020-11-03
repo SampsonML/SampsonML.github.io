@@ -1,4 +1,4 @@
-<img src="Face.jpeg" height="200">  <img src="Galaxy.jpg" height="200">  
+<img src="Face.jpeg" height="200">  <img src="Galaxy.jpg" height="200">  <img src="Computer.jpg" height="200">  
 
 ## About Me
 My name is Matt Sampson, and I am an...
