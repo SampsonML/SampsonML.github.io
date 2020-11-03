@@ -1,4 +1,4 @@
-<img src="Face.jpeg" height="200">  I like astrophysics <br> I like mathematics  <br> I like computer
+<img src="Face.jpeg" height="200">  
 
 ## About Me
 My name is Matt Sampson, and I am an...
