@@ -2,6 +2,9 @@
 ## About Me
 My name is Matt Sampson, and I am a final year undergraduate student studying a double degree in Physics and Computational Mathematics.
 
+## CV
+[CV.pdf](Matt_Sampson_CV_Long.pdf)
+
 
 ## Accounts
 <img src="ScholarLogo2.png" height="15"> [Scholar](https://scholar.google.com/citations?user=iegOCeYAAAAJ&hl=en)
