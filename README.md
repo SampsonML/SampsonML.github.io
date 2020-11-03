@@ -10,3 +10,6 @@ My name is Matt Sampson, and I am a final year undergraduate student studying a 
 ## Research Interests
 ### Computational Astrophysics
 ### Computational Mathematics
+
+## Other Interests
+#### Synthwave music
