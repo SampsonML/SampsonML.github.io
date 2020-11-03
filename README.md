@@ -1,3 +1,5 @@
+<img src="Face.jpeg" height="200">
+
 ## About Me
 My name is Matt Sampson, and I am an...
 
