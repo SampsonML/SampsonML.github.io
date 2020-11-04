@@ -17,5 +17,6 @@ I am interesting in large scale computing and
 ### Computational Mathematics
 
 ## Other Interests
-### Synthwave music
+### Synthwave music:
+I would taking a look at artists like [Kavinsky](https://open.spotify.com/artist/0UF7XLthtbSF2Eur7559oV), [Thomas Barrandon](https://open.spotify.com/artist/5HaHjEOMBZBDiMXP7Wz1Zr), and [Carpenter Brut](https://open.spotify.com/artist/1l2oLiukA9i5jEtIyNWIEP) if you want to have your mind transported to the nether.
 ### Game Design
