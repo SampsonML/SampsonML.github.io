@@ -12,7 +12,8 @@ My name is Matt Sampson, and I am a final year undergraduate student studying a 
 <img src="orc.png" height="15">  [Orcid](https://orcid.org/0000-0001-5748-5393)
 
 ## Research Interests
-### Computational Astrophysics
+### Computational Astrophysics:
+I am interesting in large scale computing and 
 ### Computational Mathematics
 
 ## Other Interests
