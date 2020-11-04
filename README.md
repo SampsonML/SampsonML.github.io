@@ -20,4 +20,4 @@ I am interesting in large scale computing and
 ### Synthwave music:
 Take a look at artists like [Kavinsky](https://open.spotify.com/artist/0UF7XLthtbSF2Eur7559oV), [Thomas Barrandon](https://open.spotify.com/artist/5HaHjEOMBZBDiMXP7Wz1Zr), and [Carpenter Brut](https://open.spotify.com/artist/1l2oLiukA9i5jEtIyNWIEP) if you want to have your mind transported to the nether.
 ### Game Design:
-Physics engines and graphics rendering are fields that fascinate me. As a former linux man I made a very brief guide to installing and set-up basics to start your graphical journey and render a beautiful triangle using OpenGL and the free Jetbrains IDE CLion [Here it is](https://github.com/SampsonML/OpenGL_CLion_Linux_Setup). 
+Physics engines and graphics rendering are fields that fascinate me. As a former linux man I made a very brief guide to installing and set-up basics to start your graphical journey and render a beautiful triangle using OpenGL and the free Jetbrains IDE CLion ([Here it is](https://github.com/SampsonML/OpenGL_CLion_Linux_Setup)). 
