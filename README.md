@@ -2,6 +2,8 @@
 ## About Me
 My name is Matt Sampson, and I am a final year undergraduate student studying a double degree in Physics and Computational Mathematics. I'm very passionate about astrophysics and computational simulations.
 
+![Alt Text](Kick100.gif)
+
 ## Curriculum Vitae
 [Matt Sampson](Matt_Sampson_CV_Long.pdf)
 
