@@ -26,4 +26,4 @@ Physics engines and graphics rendering are fields that fascinate me. As a former
 ## Some Animations of what I like to work on:
 
 SPH Simulation of Dark Matter Halo, using a modified version of Gadget-2 <br> <img src="Kick100.gif" height="200">  <br>  <br>
-FVM Solution to Groundwater Modelling Problem written in MATLAB <br> <img src="ModelPic.png" height="300">  <img src="Capstone.gif" height="300"> 
+FVM Solution to Groundwater Modelling Problem written in MATLAB <br> <img src="ModelPic.png" class="inline" height="200">  <img src="Capstone.gif" height="300"> 
