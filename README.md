@@ -1,8 +1,6 @@
 
 ## About Me
-My name is Matt Sampson, and I am a final year undergraduate student studying a double degree in Physics and Computational Mathematics. I'm very passionate about astrophysics and computational simulations. <br> <br> <br>
-SPH Simulation of Dark Matter Halo, using a modified version of Gadget-2 <br> <img src="Kick100.gif" height="200">  <br>  <br>
-FVM Solution to Groundwater Modelling Problem written in MATLAB <br> <img src="Capstone.gif" height="300"> 
+My name is Matt Sampson, and I am a final year undergraduate student studying a double degree in Physics and Computational Mathematics. I'm very passionate about astrophysics and computational simulations. 
 
 ## Curriculum Vitae
 [Matt Sampson](Matt_Sampson_CV_Long.pdf)
@@ -24,3 +22,8 @@ As we approach an age where it is becoming easier and easier to have acess to ex
 Take a look at artists like [Kavinsky](https://open.spotify.com/artist/0UF7XLthtbSF2Eur7559oV), [Thomas Barrandon](https://open.spotify.com/artist/5HaHjEOMBZBDiMXP7Wz1Zr), and [Carpenter Brut](https://open.spotify.com/artist/1l2oLiukA9i5jEtIyNWIEP) if you want to have your mind transported to the nether, which is a great place to be when thinking about complicated mathematical and physical problems.
 ### Game Design:
 Physics engines and graphics rendering are fields that fascinate me. As a former linux man I made a very brief guide to installing and set-up basics to start your graphical journey and render a beautiful triangle using OpenGL and the free Jetbrains IDE CLion ([Here it is](https://github.com/SampsonML/OpenGL_CLion_Linux_Setup)). 
+
+## Some Animations of what I like to work on:
+<br> <br> <br>
+SPH Simulation of Dark Matter Halo, using a modified version of Gadget-2 <br> <img src="Kick100.gif" height="200">  <br>  <br>
+FVM Solution to Groundwater Modelling Problem written in MATLAB <br> <img src="Capstone.gif" height="300"> 
