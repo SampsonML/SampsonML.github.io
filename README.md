@@ -2,7 +2,7 @@
 ## About Me
 My name is Matt Sampson, and I am a final year undergraduate student studying a double degree in Physics and Computational Mathematics. I'm very passionate about astrophysics and computational simulations. <br> <br> <br>
 SPH Simulation of Dark Matter Halo, using a modified version of Gadget-2 <br> <img src="Kick100.gif" height="200">  <br>  <br>
-FVM Solution to Groundwater Modelling Problem written in MATLAB <br> <img src="Capstone.gif" height="250"> 
+FVM Solution to Groundwater Modelling Problem written in MATLAB <br> <img src="Capstone.gif" height="300"> 
 
 ## Curriculum Vitae
 [Matt Sampson](Matt_Sampson_CV_Long.pdf)
