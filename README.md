@@ -13,8 +13,9 @@ My name is Matt Sampson, and I am a final year undergraduate student studying a 
 
 ## Research Interests
 ### Computational Astrophysics:
-I am interesting in large scale computing and 
-### Computational Mathematics
+I am interesting in lhow numerical simulations help us probe some the the greatest open questions in the field of astrophysics. 
+### Computational Mathematics:
+As we approach extremely 
 
 ## Other Interests
 ### Synthwave music:
