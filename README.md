@@ -1,6 +1,6 @@
 
 ## About Me
-My name is Matt Sampson, and I am a final year undergraduate student studying a double degree in Physics and Computational Mathematics. I'm very passionate about astrophysics and computational simulations. 
+My name is Matt Sampson, and I am and honurs student, and Bok scholar at ANU studying cosmic ray astrophysics. I'm very passionate about astrophysics and computational simulations. 
 
 ## Curriculum Vitae
 [Matt Sampson](Matt_Sampson_CV_Long.pdf)
