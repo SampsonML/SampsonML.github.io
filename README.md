@@ -3,7 +3,7 @@
 My name is Matt Sampson, and I am an honours student, and Bok scholar at ANU studying cosmic ray propegation through magnetic fields. I'm very passionate about astrophysics and computational simulations. 
 
 ## Curriculum Vitae
-[Matt Sampson](Matt_Sampson_CV_Long.pdf)
+[Matt Sampson](CV.pdf)
 
 
 ## Accounts
