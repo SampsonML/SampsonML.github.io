@@ -24,6 +24,6 @@ Take a look at artists like [Kavinsky](https://open.spotify.com/artist/0UF7XLtht
 Physics engines and graphics rendering are fields that fascinate me. As a former linux man I made a very brief guide to installing and set-up basics to start your graphical journey and render a beautiful triangle using OpenGL and the free Jetbrains IDE CLion ([Here it is](https://github.com/SampsonML/OpenGL_CLion_Linux_Setup)). 
 
 ## Some Animations of what I like to work on:
-Cosmic ray propagation through turbulent molecular clouds   <br> <img src="Cosmic.gif" height="200">  <br>  <br>
+Cosmic ray propagation through turbulent molecular clouds   <br> <img src="Cosmic.gif" height="300">  <br>  <br>
 SPH Simulation of Galaxy interacting with a Dark Matter Halo with increasing orbittal velocities, using a modified version of Gadget-2  <br> <img src="No_Kick.gif" height="200"> <img src="Kick100.gif" height="200"> <img src="Kick500.gif" height="200">  <br>  <br>
 FVM Solution to Groundwater Modelling Problem written in MATLAB <br> <img src="ModelPic.png" class="inline" height="200">  <img src="CapCrop.gif" height="200"> 
