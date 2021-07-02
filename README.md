@@ -3,7 +3,7 @@
 My name is Matt Sampson, and I am an honours student, and Bok scholar at ANU studying large-scale cosmic ray propegation through the interstellar medium (ISM). I'm very passionate about astrophysics and computational simulations. 
 
 ## Curriculum Vitae
-[Matt Sampson](Matt_Sampson_CV_(16).pdf)
+[Matt Sampson](MattCV.pdf)
 
 
 ## Accounts
