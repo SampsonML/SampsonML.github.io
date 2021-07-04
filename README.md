@@ -1,6 +1,6 @@
 
 ## About Me
-My name is Matt Sampson, and I am an honours student, and Bok scholar at ANU studying large-scale cosmic ray propegation through the interstellar medium (ISM). I'm very passionate about astrophysics and computational simulations. 
+My name is Matt Sampson, and I am an honours student and Bok scholar at ANU studying large-scale cosmic ray propegation through the interstellar medium (ISM). I'm very passionate about astrophysics and computational simulations. 
 
 ## Curriculum Vitae
 [Matt Sampson](MattCV.pdf)
@@ -13,9 +13,9 @@ My name is Matt Sampson, and I am an honours student, and Bok scholar at ANU stu
 
 ## Research Interests
 ### Computational Astrophysics:
-I am interested in how numerical simulations help us probe some the the greatest open questions in the field of astrophysics. Computational fluid dynamics is a field I am particularly interested in, and more specifically, the ability to build efficient multi-scale models to reduce the size of "the grid" when talking about sub-grid physics prescriptions.
+I am interested in how numerical simulations help us probe some of the greatest open questions in the field of astrophysics. Computational fluid dynamics is a field I am particularly interested in, and more specifically, the ability to build efficient multi-scale models allowing for more physically accurate simulations of reality.
 ### Computational Mathematics:
-As we approach an age where it is becoming easier and easier to have acess to extremely powerful computing power, it is important to make sure our mathematical approaches to aproximating solutions takes full advantage of this compute. Massively parallel computers can be taken advatage of if we are clever about the way we build our solution methods.
+As we approach an age where it is becoming easier and easier to have acess to extremely powerful computing power, it is important to make sure our mathematical approaches to aproximating solutions takes full advantage of this power. Massively parallel computers can be taken advatage of if we are clever about the way we build our solution methods.
 
 ## Other Interests
 ### Synthwave music:
