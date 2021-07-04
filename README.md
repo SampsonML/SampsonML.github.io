@@ -15,7 +15,7 @@ My name is Matt Sampson, and I am an honours student and Bok scholar at ANU stud
 ### Computational Astrophysics:
 I am interested in how numerical simulations help us probe some of the greatest open questions in the field of astrophysics. Computational fluid dynamics is a field I am particularly interested in, and more specifically, the ability to build efficient multi-scale models allowing for more physically accurate simulations of reality.
 ### Computational Mathematics:
-As we approach an age where it is becoming easier and easier to have acess to extremely powerful computing power, it is important to make sure our mathematical approaches to aproximating solutions takes full advantage of this power. Massively parallel computers can be taken advatage of if we are clever about the way we build our solution methods.
+As we approach an age where it is becoming easier and easier to have acess to extremely powerful computing power, it is important to make sure our mathematical approaches to aproximating solutions takes full advantage of this power. Massively parallel computers can be taken advantage of if we are clever about the way we build our solution methods.
 
 ## Other Interests
 ### Synthwave music:
