@@ -21,7 +21,7 @@ As we approach an age where it is becoming easier and easier to have acess to ex
 ### Synthwave music:
 Take a look at artists like [Kavinsky](https://open.spotify.com/artist/0UF7XLthtbSF2Eur7559oV), [Thomas Barrandon](https://open.spotify.com/artist/5HaHjEOMBZBDiMXP7Wz1Zr), and [Carpenter Brut](https://open.spotify.com/artist/1l2oLiukA9i5jEtIyNWIEP) if you want to have your mind transported to the nether, which is a great place to be when thinking about complicated mathematical and physical problems.
 
-I also make some music myself [Spotify](https://open.spotify.com/artist/4M4LjJ8gc4TXedGU3uKqVC?si=XH3gDSt7QQuJRiKD6lnCkw&dl_branch=1) [Apple Mucis] (https://music.apple.com/us/artist/mars-hanson/1574107794) [YoutTube](https://www.youtube.com/channel/UCDzPOMjCh6RkpTSGkMvxJ5A)
+I also make some music myself [Spotify](https://open.spotify.com/artist/4M4LjJ8gc4TXedGU3uKqVC?si=XH3gDSt7QQuJRiKD6lnCkw&dl_branch=1) [Apple Music](https://music.apple.com/us/artist/mars-hanson/1574107794) [YoutTube](https://www.youtube.com/channel/UCDzPOMjCh6RkpTSGkMvxJ5A)
 ### Game Design:
 Physics engines and graphics rendering are fields that fascinate me. As a former linux man I made a very brief guide to installing and set-up basics to start your graphical journey and render a beautiful triangle using OpenGL and the free Jetbrains IDE CLion ([Here it is](https://github.com/SampsonML/OpenGL_CLion_Linux_Setup)). 
 
