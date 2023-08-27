@@ -257,9 +257,22 @@
 			
 			<div id="test"></div>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.globe.min.js"></script>
 			<script>
-  			VANTA.WAVES('#test')
+			VANTA.GLOBE({
+  			el: "#your-element-selector",
+  			mouseControls: true,
+  			touchControls: true,
+  			gyroControls: false,
+  			minHeight: 200.00,
+  			minWidth: 200.00,
+  			scale: 1.00,
+  			scaleMobile: 1.00,
+  			color: 0x69719d,
+  			color2: 0x31e13f,
+  			size: 0.80,
+  			backgroundColor: 0x5020f
+			})
 			</script>
 
 	</body>
