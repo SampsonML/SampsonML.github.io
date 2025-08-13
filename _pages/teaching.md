@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Teaching experience
+description: I am passionate about teaching students physics, mathematics, statistics and machine learning
 nav: true
 nav_order: 6
 ---
