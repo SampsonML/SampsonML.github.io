@@ -30,4 +30,4 @@ latest_posts:
 
 I am currently at Princeton University studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, optimization, and world models. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. 
 
-> **Long-term vision**: To build models that robustly learn representations of complex dynamical systems — leading to both novel scientific insight into these systems while also pushing learning algorithms towards new physics-inspired directions
+> **Long-term vision**: To build models that robustly learn representations of complex dynamical systems — leading to both novel scientific insight into these systems while also pushing machine learning algorithms towards new physics-inspired directions
