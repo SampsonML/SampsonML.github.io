@@ -14,3 +14,8 @@ Courses I have taught at Princeton and the Queensland University of Technology i
 * SEB113 Quantatative Analysis
 * PVB101 Physics of the Very Large
 * BVB204 Ecology - Statistics Component
+
+## Mercer Community College Machine Learning club
+* I lead a series of yearly workshops teaching local community college students programming and machine learning skills
+* Students from this have gone on to participate in both internship opportunities and transfer offers at 4-year
+institutions such as Princeton University and others
