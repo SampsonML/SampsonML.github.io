@@ -9,10 +9,12 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Matt Sampson</p>
-    <p>Physics for AI</p>
-    <p>AI for Physics</p>
-    <p>PhD candidate at Princeton</p>
+    <ul>
+      <li>Matt Sampson</li>
+      <li>Physics for AI</li>
+      <li>AI for Physics</li>
+      <li>PhD candidate at Princeton</li>
+    </ul>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
