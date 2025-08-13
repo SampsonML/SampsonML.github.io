@@ -23,3 +23,19 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* smaller social icons under the portrait */
+.profile .contact-icons { display: flex; flex-wrap: wrap; gap: 8px; }
+.profile .contact-icons a { line-height: 1; padding: 3px 5px; font-size: 0.9rem; }
+
+/* if the include uses Font Awesome / Academicons size helpers */
+.profile .contact-icons .fa-2x,
+.profile .contact-icons .fa-3x,
+.profile .contact-icons .ai-2x,
+.profile .contact-icons .ai-3x { font-size: 1em !important; }
+
+/* if any icons are SVGs */
+.profile .contact-icons svg { width: 16px; height: 16px; }
+
+/* a little spacing below your "PhD candidate at Princeton" line */
+.profile-social { margin-top: .5rem; }
