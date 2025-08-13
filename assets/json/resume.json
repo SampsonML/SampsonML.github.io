@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Matthew Liam Sampson"
+  },
+  "meta": {
+    "dateOfBirth": "1992-03-25"
+  },
+  "education": [
+    {
+      "institution": "Princeton University",
+      "studyType": "PhD",
+      "area": "Physics",
+      "startDate": "2022-01",
+      "highlights": [
+        "Machine learning",
+        "Computational astrophysics."
+      ]
+    },
+    {
+      "institution": "Australian National University",
+      "studyType": "B.Sc. (Honours)",
+      "area": "Physics",
+      "startDate": "2021-01",
+      "endDate": "2021-12",
+      "highlights": [
+        "Cosmic ray transport in turbulent plasma, software and simulations"
+      ]
+    },
+    {
+      "institution": "Queensland University of Technology",
+      "studyType": "B.Sc.",
+      "area": "Physics",
+      "startDate": "2017-01",
+      "endDate": "2020-12"
+    },
+    {
+      "institution": "Queensland University of Technology",
+      "studyType": "B.Math.",
+      "area": "Applied and Computational Mathematics",
+      "startDate": "2017-01",
+      "endDate": "2020-12"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Physics inspired machine learning",
+      "keywords": [
+        "How can we use ideas from physics to develop better machine learning architecture/algorithms?",
+        "Are we able to build robust world models that obey all physical laws?"
+      ]
+    },
+    {
+      "name": "Dynamical systems",
+      "keywords": [
+        "How do we best model complex, dynamical systems to extract useful data",
+        "Can a purely predictive model allow us to understnad these systems?"
+      ]
+    }
+  ]
+}
