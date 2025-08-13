@@ -30,4 +30,34 @@
       "startDate": "2022-08-01",
     }
   ],
+  "education": [
+    {
+      "institution": "Australian National Univeristy",
+      "location": "Canberra, ACT",
+      "area": "Computational Astrophysics",
+      "studyType": "Honours",
+      "startDate": "2021-02-01",
+      "endDate": "2021-11-01",
+    }
+  ],
+  "education": [
+    {
+      "institution": "Queensland University of Technology",
+      "location": "Brisbane, QLD",
+      "area": "Applied and Computational Mathematics",
+      "studyType": "Bachelor",
+      "startDate": "2017-03-01",
+      "endDate": "2020-11-01",
+    }
+  ],
+  "education": [
+    {
+      "institution": "Queensland University of Technology",
+      "location": "Brisbane, QLD",
+      "area": "Physics",
+      "studyType": "Bachelor",
+      "startDate": "2017-03-01",
+      "endDate": "2020-11-01",
+    }
+  ],
 }
