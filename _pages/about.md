@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the _news folder
 
@@ -28,4 +28,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently at Princeton University studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, optimization, and world models. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. I have also worked as a data scientist/computational statistician in fields of information geometry and biology.
+I am currently at Princeton University studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, optimization, and world models. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. 
+
+> **Long-term vision**: To build models that robustly learn representations of complex dynamical systems — leading to both novel scientific insight into these systems while also pushing learning algorithms towards new physics-inspired directions
