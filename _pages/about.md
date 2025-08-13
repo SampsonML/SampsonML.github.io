@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Hey, I'm Matt, a PhD researcher studying ways to advance machine learning through physics.
+subtitle: Hey, I'm Matt, a PhD researcher studying ways to advance machine learning through physics, and advance science through machine learning.
 
 profile:
   align: right
