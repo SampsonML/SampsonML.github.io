@@ -8,6 +8,8 @@ nav_order: 6
 ---
 > **Teaching philosophy**: I believe that education is one of the most important and impactful components of one’s life, and a high quality education should be available to all regardless of background. With the rapid advancement of technology and the rising potential for great amounts of wealth inquality, it is crucial to emphasise equity in access to quality education. 
 
+## Princeton and QUT
+
 Courses I have taught at Princeton and the Queensland University of Technology include
 * AST205 Planets and the Universe
 * SEB104 Grand Challenges in Science
