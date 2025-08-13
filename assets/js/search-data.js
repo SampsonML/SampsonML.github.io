@@ -376,8 +376,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-am-on-the-lookout-for-faculty-postdoc-and-industry-roles",
-          title: 'I am on the lookout for faculty, postdoc, and industry roles!',
+            },},{id: "news-lucky-to-be-one-of-4-nominated-students-from-princeton-for-the-google-phd-fellowship-the-first-nomination-from-the-astrophysical-sciences-dept-at-princeton",
+          title: 'Lucky to be one of 4 nominated students from Princeton for the Google...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
