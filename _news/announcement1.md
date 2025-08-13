@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Lucky to be one of 4 **nominated** students from Princeton for the Google PhD Fellowship! The first nomination from the astrophysical sciences dept. at Princeton
+Lucky to be one of 4 students from Princeton University **nominated** for the 2025 Google PhD Fellowship! The first nomination from the astrophysical sciences deptartment at Princeton
