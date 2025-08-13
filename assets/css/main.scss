@@ -26,13 +26,13 @@ $max-content-width: {{ site.max_width }};
 
 /* slightly larger social icons under the portrait */
 .profile .contact-icons { display: flex; flex-wrap: wrap; gap: 10px; }
-.profile .contact-icons a { line-height: 1; padding: 4px 6px; font-size: 1.2rem; }
+.profile .contact-icons a { line-height: 1; padding: 4px 6px; font-size: 1.8rem; }
 
 /* if the include uses Font Awesome / Academicons size helpers */
 .profile .contact-icons .fa-2x,
 .profile .contact-icons .fa-3x,
 .profile .contact-icons .ai-2x,
-.profile .contact-icons .ai-3x { font-size: 1.8em !important; }
+.profile .contact-icons .ai-3x { font-size: 1.15em !important; }
 
 /* if any icons are SVGs */
 .profile .contact-icons svg { width: 20px; height: 20px; }
