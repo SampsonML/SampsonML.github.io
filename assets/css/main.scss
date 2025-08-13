@@ -26,7 +26,7 @@ $max-content-width: {{ site.max_width }};
 
 /* slightly larger social icons under the portrait */
 .profile .contact-icons { display: flex; flex-wrap: wrap; gap: 10px; }
-.profile .contact-icons a { line-height: 1; padding: 4px 6px; font-size: 3.0rem; }
+.profile .contact-icons a { line-height: 1; padding: 4px 6px; font-size: 2.15rem; }
 
 /* if the include uses Font Awesome / Academicons size helpers */
 .profile .contact-icons .fa-2x,
