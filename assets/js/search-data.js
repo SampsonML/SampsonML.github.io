@@ -376,8 +376,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-lucky-to-be-one-of-4-nominated-students-from-princeton-for-the-google-phd-fellowship-the-first-nomination-from-the-astrophysical-sciences-dept-at-princeton",
-          title: 'Lucky to be one of 4 nominated students from Princeton for the Google...',
+            },},{id: "news-lucky-to-be-one-of-4-students-from-princeton-university-nominated-for-the-2025-google-phd-fellowship-the-first-nomination-from-the-astrophysical-sciences-deptartment-at-princeton",
+          title: 'Lucky to be one of 4 students from Princeton University nominated for the...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
