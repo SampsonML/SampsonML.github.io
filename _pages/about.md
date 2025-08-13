@@ -28,6 +28,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hey, I'm Matt, a PhD researcher at Princeton University working with [Prof. Peter Melchior](https://pmelchior.net/). I studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, optimization, and world models. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. 
+Hey, I'm Matt, a PhD researcher at Princeton University working with [Prof. Peter Melchior](https://pmelchior.net/). I am studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, optimization, and world models. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. 
 
 > **Long-term vision**:  To create models that deeply understand complex dynamical systems— enabling new discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
