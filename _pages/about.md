@@ -2,14 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Hey, I'm Matt, a PhD researcher studying ways to advance machine learning through physics.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>email: matt.sampson@princeton.edu</p>
+    <p>Matt Sampson</p>
+    <p>Physics for AI</p>
+    <p>AI for Physics</p>
+    <p>PhD candidate at Princeton</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,4 +30,3 @@ latest_posts:
 
 I am currently at Princeton University studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, and world models. I am formally trained as a physicist, and applied mathematician and am fascinated by the intersection of physics and machine learning. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. I have also worked as a data scientist/computational statistician in fields of information geometry and biology.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
