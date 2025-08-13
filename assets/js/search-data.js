@@ -504,6 +504,13 @@ ninja.data = [{
           window.open("mailto:%6D%61%74%74.%73%61%6D%70%73%6F%6E@%70%72%69%6E%63%65%74%6F%6E.%65%64%75", "_blank");
         },
       },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/SampsonML", "_blank");
+        },
+      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
