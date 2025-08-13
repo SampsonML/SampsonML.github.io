@@ -7,7 +7,7 @@ subtitle: Hey, I'm Matt, a PhD researcher studying ways to advance machine learn
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Matt Sampson</p><br>
     <p>Physics for AI</p><br>
@@ -28,4 +28,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently at Princeton University studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, and world models. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. I have also worked as a data scientist/computational statistician in fields of information geometry and biology.
+I am currently at Princeton University studying ways to advance science and machine learning with a particular focus on modelling dynamical systems, representation learning, optimization, and world models. Previously I was at the Australian National University where I performed numerical experiments and helped develop a code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. I have also worked as a data scientist/computational statistician in fields of information geometry and biology.
