@@ -39,3 +39,20 @@ $max-content-width: {{ site.max_width }};
 
 /* a little spacing below your "PhD candidate at Princeton" line */
 .profile-social { margin-top: .5rem; }
+
+/* center the text under the portrait */
+.profile .more-info,
+.profile .more-info p { 
+  text-align: center;
+  margin: 0 0 .25rem;
+}
+
+/* make sure the icons row centers too */
+.profile-social { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+  justify-content: center; 
+  text-align: center;
+}
+.profile .contact-icons { justify-content: center; }
