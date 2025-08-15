@@ -11,8 +11,7 @@
 - title: Summary
   type: list
   contents:
-    - "PhD researcher at Princeton University studying ways to advance science and machine learning, with a focus on modelling dynamical systems, representation learning, and world models. Formally trained as a physicist and applied mathematician; previously at the Australian National University working on numerical experiments and a code to simulate cosmic ray propagation in dynamically evolving turbulent plasma. Experience as a data scientist/computational statistician in information geometry and biology."
-
+    - "I am a PhD candidate at Princeton University. I am studying ways to advance both science and machine learning with a particular focus on modelling dynamical systems, representation learning, optimization, and building physics-inspired intelligence."
 - title: Education
   type: time_table
   contents:
