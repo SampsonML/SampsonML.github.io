@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: sampson_CV_2025_academic.pdf # you can also use external links here
+cv_pdf: academic_job_sampson_cv_update.pdf 
 description: 
 toc:
   sidebar: left
