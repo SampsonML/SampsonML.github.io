@@ -28,8 +28,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hey, I'm Matt, a PhD researcher at Princeton University working with <a href="https://pmelchior.net" style="font-weight: bold; color:#880808;">Prof. Peter Melchior</a>. I research ways to advance machine learning and science, particularly focusing on optimization, representation learning, and dynamical systems. Physics allows us to uncover order from chaos, my aim is to bring this approach to the field of machine learning optimization because no matter how complex and advanced our models become, they are only as useful as our ability to train them.
+Hey, I'm Matt, a PhD researcher at Princeton University working with <a href="https://pmelchior.net" style="font-weight: bold; color:#880808;">Prof. Peter Melchior</a>. I research ways to advance machine learning and science, particularly focusing on optimization, representation learning, and dynamical systems. Physics allows us to uncover order from chaos. My aim is to bring this approach to the field of machine learning optimization because no matter how complex and advanced our models become, they are only as useful as our ability to train them.
 
 Previously I was at the Australian National University where I performed numerical experiments and helped develop code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. 
 
-> **Long-term vision**:  To design optimization methods that make it possible to build and train models with a deep understanding of complex dynamical systems— enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
+> **Long-term vision**:  To design optimization methods that make it possible to build and train models with a deep understanding of complex dynamical systems — enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
