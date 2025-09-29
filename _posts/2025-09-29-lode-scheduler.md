@@ -27,7 +27,7 @@ Other approaches, like reinforcement learning–based schedulers, hypergradient 
 
 ## The core idea: Can we learn a functional representation of DNN training?
 
-We learn a **latent representation of training dynamics** from prior runs, which one would expect to run during a standard hyperparameter sweep. By encoding training loss, validation accuracy, and learning rate into a latent space and evolving these quantities via an ODE, the system can simulate how training would unfold with different parameters, namely the learning rate schedule. In future we aim to include more hyperparamters into the latent ODE.
+We learn a **latent representation of training dynamics** from the observation of prior runs, which one would expect to run during a standard hyperparameter sweep. Our loss function is simply the square reconstruction error of these training trajectories plus some path-length regularization terms [see our previous work here](https://arxiv.org/abs/2410.08923). By encoding training loss, validation accuracy, and learning rate into a latent space and evolving these quantities via an ODE, the system can simulate how training would unfold with different parameters, namely the learning rate schedule. In future we aim to include more hyperparamters into the latent ODE.
 
 <img src="/assets/img/happy_walking_robot.png" alt="robot walk" width="600"/>
 
