@@ -49,7 +49,7 @@ Across **Fashion-MNIST, CIFAR-100, ImageNet**, and even a **Transformer language
 
 <img src="/assets/img/lr_paths.png" alt="lr paths" width="800"/>
 
-Not only did models reach higher accuracy, they also landed in **flatter regions of the loss landscape**—a property linked to stronger generalization.
+Not only did models reach higher accuracy, they also landed in **flatter regions of the loss landscape**—which hints towards stronger model generalization.
 
 Key highlights:
 - Consistently superior test accuracy across CNNs, ResNets, and Transformers.  
