@@ -37,18 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-dynamics-of-learning",
-        
-          title: "Dynamics of learning",
-        
-        description: "Dynamics of learning",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/lode-scheduler/";
-          
-        },
-      },{id: "books-the-godfather",
+        },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
