@@ -36,6 +36,8 @@ From there, the LODE scheduler can:
 2. **Generate** a specialized schedule tuned to the current model and dataset aimed to mimimize future validation loss.  
 3. **Adapt** dynamically as training progresses, adjusting steps with foresight rather than guesswork.
 
+The schematic below demonstrates the basic training and inference pipeline. 
+
 <img src="/assets/img/lode_schematic.png" alt="schematic" width="600"/>
 
 This is like giving our robot optimizer (henceforth roboptimizer) a map of the predicted terrain ahead which has been compiled by decades of previous mechanical explorers journeys (aka training runs). We therefore can make decisions based on maximizing a future reward, i.e taking a large step now may not improve current training accuracy, however it may also be best/only the way to get to the best long term performance. Our learning rate schedule, and hence underlying optimization algorithm is no longer greedy.
