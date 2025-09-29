@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "books-the-godfather",
+        },{id: "post-dynamics-of-learning",
+        
+          title: "Dynamics of learning",
+        
+        description: "Creating a generative learning rate scheduler with latent ODEs",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/lode-scheduler/";
+          
+        },
+      },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
