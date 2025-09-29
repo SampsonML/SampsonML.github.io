@@ -71,7 +71,7 @@ Well, great question, glad you asked. To test this question we may probe the gen
 
 <img src="/assets/img/future.png" alt="future trajectory" width="800"/>
 
-While this is clearly not a rigourous proof, it shows at the very least our LODE scheduler understands how to navigate the loss surface to end up in the best minima it can find after an arbitrary amount of exploration time, ie we do not always generate the same schedule. This shows that in a way, we can control how greedy we wish our optimizer to be, at least as far as controlling it through the learning rate. Going back to our somewhat contrived analogy, our roboptimizers understand how long they are able to freely explore until they must settle and quickly descend down to the best performing region within their horizon.
+While this is clearly not a rigourous proof, it shows at the very least our LODE scheduler understands how to navigate the loss surface to end up in the best minima it can find after an arbitrary amount of exploration time, i.e. we do not always generate the same schedule. This shows that in a way, we can control how greedy we wish our optimizer to be, at least as far as controlling it through the learning rate. Going back to our somewhat contrived analogy, our roboptimizers understand how long they are able to freely explore until they must settle and quickly descend down to the best performing region within their horizon.
 
 ---
 
