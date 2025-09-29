@@ -2,9 +2,9 @@
 layout: post
 title: Dynamics of learning
 date: 2025-9-30
-description: 
+description: Dynamics of learning
 tags: latent ODE
-categories: AI
+categories: optimization
 ---
 
 # Dynamics of Learning: Generative Learning Rate Schedules with Latent ODEs
