@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamics of learning
-date: 2025-9-30
+date: 2025-9-29
 description: Dynamics of learning
 tags: latent ODE
 categories: optimization
