@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamics of learning
-date: 2025-9-29
+date: 2025-10-1
 description: Dynamics of learning
 tags: latent ODE
 categories: optimization
@@ -95,4 +95,4 @@ As models grow in size and complexity, smarter training dynamics like this may b
 
 *Authors: Matt L. Sampson & Peter Melchior* 
 
-*Thank you to GPT5 for the cute and helpful images, and thank you to the artists upon which the image generative portion of this model was trained.*
+*Thank you to GPT5 for the cute and helpful images, and thank you to the artists upon which the image generative portion of GPT5 was trained.*
