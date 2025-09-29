@@ -8,6 +8,7 @@ categories: optimization
 ---
 
 # Dynamics of Learning: Generative Learning Rate Schedules with Latent ODEs
+[![arXiv](https://img.shields.io/badge/arXiv-2401.07313-<COLOR>.svg)](https://arxiv.org/abs/2410.08923)
 
 <img src="/assets/img/robo_map.png" alt="robo map" width="800"/>
 
