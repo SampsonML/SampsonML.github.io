@@ -9,7 +9,7 @@ categories: optimization
 
 # Dynamics of Learning: Generative Learning Rate Schedules with Latent ODEs
 
-<img src="/assets/img/happy_walking_robot.png" alt="robot walk" width="1000"/>
+<img src="/assets/img/robo_map.png" alt="robo map" width="400"/>
 
 Successfully training deep neural networks is hard, often very hard. Many months, and often many dollars (thousands, millions?) can be spent trying to train a single model. One of, if not the most important hyperparameter of stochastic optimisation is the *learning rate*. Too small, and training drags on forever. Too large, and the model bounces chaotically around the loss landscape, never converging. The way we adjust this learning rate over time—the **learning rate schedule**—is incredibly important and has been the subject of intense study.  
 
@@ -29,6 +29,8 @@ Other approaches, like reinforcement learning–based schedulers, hypergradient 
 
 We learn a **latent representation of training dynamics** from prior runs, which one would expect to run during a standard hyperparameter sweep. By encoding training loss, validation accuracy, and learning rate into a latent space and evolving these quantities via an ODE, the system can simulate how training would unfold with different parameters, namely the learning rate schedule. In future we aim to include more hyperparamters into the latent ODE.
 
+<img src="/assets/img/happy_walking_robot.png" alt="robot walk" width="600"/>
+
 From there, the scheduler can:
 1. **Predict** long-term validation performance of different learning rate paths.  
 2. **Generate** a specialized schedule tuned to the current model and dataset aimed to mimimize future validation loss.  
@@ -37,8 +39,6 @@ From there, the scheduler can:
 <img src="/assets/img/lode_schematic.png" alt="schematic" width="600"/>
 
 This is like giving our robot optimizer (henceforth roboptimizer) a map of the predicted terrain ahead which has been compiled by decades of previous mechanical explorers journeys (aka training runs). We therefore can make decisions based on maximizing a future reward, i.e taking a large step now may not improve current training accuracy, however it may also be best/only the way to get to the best long term performance. Our learning rate schedule, and hence underlying optimization algorithm is no longer greedy.
-
-<img src="/assets/img/robo_map.png" alt="robo map" width="400"/>
 
 ---
 
