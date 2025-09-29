@@ -3,14 +3,13 @@ layout: post
 title: Dynamics of learning
 date: 2025-09-29
 description: Creating a generative learning rate scheduler with latent ODEs
-tags: latent ODE
 categories: optimization
 ---
 
 # Dynamics of Learning: Generative Learning Rate Schedules with Latent ODEs
 [![arXiv](https://img.shields.io/badge/arXiv-2401.07313-<COLOR>.svg)](https://arxiv.org/abs/2410.08923)
 
-<img src="/assets/img/robo_map.png" alt="robo map" width="800"/>
+<img src="/assets/img/robo_map.png" alt="robo map" width="700"/>
 
 Successfully training deep neural networks is hard, often very hard. Many months, and often many dollars (thousands, millions?) can be spent trying to train a single model. One of, if not the most important hyperparameter for the optimisation of deep neural networks (DNNs) is the *learning rate*. Too small, and training drags on forever. Too large, and the model bounces chaotically around the loss landscape, never converging. The way we adjust this learning rate over time—the **learning rate schedule**—is incredibly important and has been the subject of intense study.  
 
