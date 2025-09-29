@@ -67,7 +67,7 @@ A natural question here would be how well have we learned a representation of th
 
 Well, great question, glad you asked. To test this question we may probe the generated schedules and hence training results we get when asking to prioritize results at different times. For example, instead of making a schedule resulting in the best validation loss at the end of training, how about one that minimises this loss after only 50% of the training, what about 10%? The following figure shows the test accuracy, and generated learning rate schedules from the LODE scheduler when asking the validation loss to be minimised at ~8%, 16%, 50%, and 100% of the total training time. We can see if we desire early performance, we can get it with no changes to the scheduler at all (except of course telling it when we want our loss minimized).
 
-<img src="/assets/img/future.png" alt="future trajectory" width="700"/>
+<img src="/assets/img/future.png" alt="future trajectory" width="800"/>
 
 While this is clearly not a rigourous proof, it shows at the very least our LODE scheduler understands how to navigate the loss surface to end up in the best minima it can find after an arbitrary amount of exploration time, ie we do not always generate the same schedule. This shows that in a way, we can control how greedy we wish our optimizer to be, at least as far as controlling it through the learning rate. Going back to our somewhat contrived analogy, our roboptimizers understand how long they are able to freely explore until they must settle and quickly descend down to the best performing region within their horizon.
 
