@@ -10,8 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Matt Sampson</p><br>
-    <p>Physics for AI</p><br>
-    <p>AI for Physics</p><br>
+    <p>Optimization in deep learning</p><br>
     <p>PhD candidate at Princeton</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
