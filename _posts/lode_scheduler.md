@@ -9,7 +9,7 @@ categories: AI
 
 # Dynamics of Learning: Generative Learning Rate Schedules with Latent ODEs
 
-<img src="assets/img/happy_walking_robot.png" alt="robot walk" width="1000"/>
+<img src="/assets/img/happy_walking_robot.png" alt="robot walk" width="1000"/>
 
 Successfully training deep neural networks is hard, often very hard. Many months, and often many dollars (thousands, millions?) can be spent trying to train a single model. One of, if not the most important hyperparameter of stochastic optimisation is the *learning rate*. Too small, and training drags on forever. Too large, and the model bounces chaotically around the loss landscape, never converging. The way we adjust this learning rate over time—the **learning rate schedule**—is incredibly important and has been the subject of intense study.  
 
@@ -34,20 +34,20 @@ From there, the scheduler can:
 2. **Generate** a specialized schedule tuned to the current model and dataset aimed to mimimize future validation loss.  
 3. **Adapt** dynamically as training progresses, adjusting steps with foresight rather than guesswork.
 
-<img src="assets/img/lode_schematic.png" alt="schematic" width="600"/>
+<img src="/assets/img/lode_schematic.png" alt="schematic" width="600"/>
 
 This is like giving our robot optimizer (henceforth roboptimizer) a map of the predicted terrain ahead which has been compiled by decades of previous mechanical explorers journeys (aka training runs). We therefore can make decisions based on maximizing a future reward, i.e taking a large step now may not improve current training accuracy, however it may also be best/only the way to get to the best long term performance. Our learning rate schedule, and hence underlying optimization algorithm is no longer greedy.
 
-<img src="assets/img/robo_map.png" alt="robo map" width="300"/>
+<img src="/assets/img/robo_map.png" alt="robo map" width="300"/>
 
 ---
 
 ## Move fast yet surprisingly don't break things
-<img src="assets/img/fast_robot.png" alt="running robot" width="500"/>
+<img src="/assets/img/fast_robot.png" alt="running robot" width="500"/>
 
 Across **Fashion-MNIST, CIFAR-100, ImageNet**, and even a **Transformer language model**, the Latent ODE scheduler beat every baseline: cosine, OneCycle, exponential decay, hypergradient descent, and reinforcement learning controllers. Quite surprisingly we see that the best performing learning rate schedules determined by our LODE scheduler often suggests significantly higher learning rates at early times what what we see in the best parametric schedules.
 
-<img src="assets/img/lr_paths.png" alt="lr paths" width="800"/>
+<img src="/assets/img/lr_paths.png" alt="lr paths" width="800"/>
 
 Not only did models reach higher accuracy, they also landed in **flatter regions of the loss landscape**—a property linked to stronger generalization.
 
@@ -56,7 +56,7 @@ Key highlights:
 - Flatter minima (confirmed via Hessian eigenvalue analysis).  
 - Computational cost only ~25% higher than simple parametric schedules, but cheaper than RL-based methods.
 
-<img src="assets/img/results_hist.png" alt="paper results" width="800"/>
+<img src="/assets/img/results_hist.png" alt="paper results" width="800"/>
 
 This insight of very large early step-sizes is not new, and there has been some great work on this phenomena termed the *edge of stability*, particularly by [Jeremy Cohen](https://jmcohen.github.io/) (who as far as I am aware, coined the term). 
 
@@ -67,7 +67,7 @@ A natural question here would be how well have we learned a representation of th
 
 Well, great question, glad you asked. To test this question we may probe the generated schedules and hence training results we get when asking to prioritize results at different times. For example, instead of making a schedule resulting in the best validation loss at the end of training, how about one that minimises this loss after only 50% of the training, what about 10%? The following figure shows the test accuracy, and generated learning rate schedules from the LODE scheduler when asking the validation loss to be minimised at ~8%, 16%, 50%, and 100% of the total training time. We can see if we desire early performance, we can get it with no changes to the scheduler at all (except of course telling it when we want our loss minimized).
 
-<img src="assets/img/future.png" alt="future trajectory" width="700"/>
+<img src="/assets/img/future.png" alt="future trajectory" width="700"/>
 
 While this is far from any rigourous proof, it shows at the very least our LODE scheduler understands how to navigate the loss surface to end up in the best minima it can find after an arbitrary amount of exploration time, ie we do not always generate the same schedule. This shows that in a way, we can control how greedy we wish our optimizer to be, at least as far as controlling it through the learning rate. Going back to our somewhat contrived analogy, our roboptimizers understand how long they are able to freely explore until they must settle and quickly descend down to the best performing region within their horizon.
 
