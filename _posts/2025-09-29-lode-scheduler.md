@@ -11,7 +11,7 @@ categories: optimization
 
 <img src="/assets/img/robo_map.png" alt="robo map" width="800"/>
 
-Successfully training deep neural networks is hard, often very hard. Many months, and often many dollars (thousands, millions?) can be spent trying to train a single model. One of, if not the most important hyperparameter of stochastic optimisation is the *learning rate*. Too small, and training drags on forever. Too large, and the model bounces chaotically around the loss landscape, never converging. The way we adjust this learning rate over time—the **learning rate schedule**—is incredibly important and has been the subject of intense study.  
+Successfully training deep neural networks is hard, often very hard. Many months, and often many dollars (thousands, millions?) can be spent trying to train a single model. One of, if not the most important hyperparameter for the optimisation of deep neural networks (DNNs) is the *learning rate*. Too small, and training drags on forever. Too large, and the model bounces chaotically around the loss landscape, never converging. The way we adjust this learning rate over time—the **learning rate schedule**—is incredibly important and has been the subject of intense study.  
 
 Our new paper, *Dynamics of Learning: Generative Schedules from Latent ODEs* takes a new approach to the learning process, proposing a fundamentally different way to design learning rate schedules: treat training itself as a **dynamical system** and model it with a **latent ordinary differential equation (Latent ODE)**. 
 
