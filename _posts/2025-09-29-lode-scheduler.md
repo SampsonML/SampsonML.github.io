@@ -20,24 +20,24 @@ Our new paper, *Dynamics of Learning: Generative Schedules from Latent ODEs* tak
 
 ## Why learning rate scheduling matters
 
-We may think of training deep neural networks akin to guiding a little robot to walk across a mountainous loss surface, eventually finding the deepest well in the land. Traditional schedules—cosine decay, OneCycle, exponential decay—are like giving the robot a fixed marching pattern, regardless of the terrain. They work decently but lack foresight: they don’t know whether a steep hill or a flat valley is coming next.  
+We may think of training deep neural networks akin to guiding a little robot to walk across a mountainous loss surface, eventually finding the deepest well in the land. Traditional parametric schedules such as cosine decay, onecycle, exponential decay, are like giving the robot a fixed marching pattern, regardless of the terrain. They work decently but lack foresight: they don’t know whether a steep hill or a flat valley is coming next.  
 
-Other approaches, like reinforcement learning–based schedulers, hypergradient descent or varieties of second-order methods, try to react to training signals on the fly. But even these methods lack a **long-term view** of how training is evolving and can often be prohibitavely expensive, one may think of  them as *greedy* optimizers.
+Other approaches, like reinforcement learning–based schedulers, hypergradient descent or varieties of second-order methods, try to react to training signals (such as subgradients) on the fly. But even these methods lack a **long-term view** of how training is evolving and can often be prohibitavely expensive, one may think of them as *greedy* optimizers.
 
 ---
 
 ## The core idea: Can we learn a functional representation of DNN training?
 
-We learn a **latent representation of training dynamics** from the observation of prior runs, which one would expect to run during a standard hyperparameter sweep. Our loss function is simply the square reconstruction error of these training trajectories plus some path-length regularization terms [see our previous work here](https://arxiv.org/abs/2410.08923). By encoding training loss, validation accuracy, and learning rate into a latent space and evolving these quantities via an ODE, the system can simulate how training would unfold with different parameters, namely the learning rate schedule. Hence we have the creation of our latent ODE scheduler (LODE scheduler). In future work we aim to include more hyperparamters into the latent ODE model such as batch size, data-quality etc.
+We learn a **latent representation of training dynamics**, training loss, validation accuracy and learning rate, from the observation of prior runs, which one would expect to have run anyway during a standard hyperparameter sweep. Our loss function is simply the square reconstruction error of these training trajectories plus some path-length regularization terms [see our previous work here](https://arxiv.org/abs/2410.08923). By encoding training loss, validation accuracy, and learning rate into a latent space and evolving these quantities via an ODE, the system can simulate how training would unfold with different parameters, namely the learning rate schedule. Hence we have the creation of our latent ODE scheduler (LODE scheduler). In future work we aim to include more hyperparamters into the latent ODE model such as batch size, data-quality etc.
 
 <img src="/assets/img/happy_walking_robot.png" alt="robot walk" width="600"/>
 
-From there, the LODE scheduler can:
+From here, the LODE scheduler can:
 1. **Predict** long-term validation performance of different learning rate paths.  
 2. **Generate** a specialized schedule tuned to the current model and dataset aimed to mimimize future validation loss.  
 3. **Adapt** dynamically as training progresses, adjusting steps with foresight rather than guesswork.
 
-The schematic below demonstrates the basic training and inference pipeline. 
+The schematic below visualizes the basic training and inference pipeline. 
 
 <img src="/assets/img/lode_schematic.png" alt="schematic" width="600"/>
 
