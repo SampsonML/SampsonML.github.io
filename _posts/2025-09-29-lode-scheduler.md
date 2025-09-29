@@ -38,7 +38,7 @@ From there, the scheduler can:
 
 This is like giving our robot optimizer (henceforth roboptimizer) a map of the predicted terrain ahead which has been compiled by decades of previous mechanical explorers journeys (aka training runs). We therefore can make decisions based on maximizing a future reward, i.e taking a large step now may not improve current training accuracy, however it may also be best/only the way to get to the best long term performance. Our learning rate schedule, and hence underlying optimization algorithm is no longer greedy.
 
-<img src="/assets/img/robo_map.png" alt="robo map" width="300"/>
+<img src="/assets/img/robo_map.png" alt="robo map" width="400"/>
 
 ---
 
