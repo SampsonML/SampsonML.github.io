@@ -20,7 +20,10 @@ pagination:
 
 {% assign blog_name_size = site.blog_name | size %}
 {% assign blog_description_size = site.blog_description | size %}
-<h1>research thoughts</h1>
+<div class="header-bar">
+  <h1>research thoughts</h1>
+  <h2 class="subtitle">a less formal way to share my scientific ideas</h2>
+</div>
 
 <!--{% if blog_name_size > 0 or blog_description_size > 0 %}
 
