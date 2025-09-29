@@ -27,11 +27,11 @@ Other approaches, like reinforcement learning–based schedulers, hypergradient 
 
 ## The core idea: Can we learn a functional representation of DNN training?
 
-We learn a **latent representation of training dynamics** from the observation of prior runs, which one would expect to run during a standard hyperparameter sweep. Our loss function is simply the square reconstruction error of these training trajectories plus some path-length regularization terms [see our previous work here](https://arxiv.org/abs/2410.08923). By encoding training loss, validation accuracy, and learning rate into a latent space and evolving these quantities via an ODE, the system can simulate how training would unfold with different parameters, namely the learning rate schedule. In future we aim to include more hyperparamters into the latent ODE.
+We learn a **latent representation of training dynamics** from the observation of prior runs, which one would expect to run during a standard hyperparameter sweep. Our loss function is simply the square reconstruction error of these training trajectories plus some path-length regularization terms [see our previous work here](https://arxiv.org/abs/2410.08923). By encoding training loss, validation accuracy, and learning rate into a latent space and evolving these quantities via an ODE, the system can simulate how training would unfold with different parameters, namely the learning rate schedule. Hence we have the creation of our latent ODE scheduler (LODE scheduler). In future work we aim to include more hyperparamters into the latent ODE model such as batch size, data-quality etc.
 
 <img src="/assets/img/happy_walking_robot.png" alt="robot walk" width="600"/>
 
-From there, the scheduler can:
+From there, the LODE scheduler can:
 1. **Predict** long-term validation performance of different learning rate paths.  
 2. **Generate** a specialized schedule tuned to the current model and dataset aimed to mimimize future validation loss.  
 3. **Adapt** dynamically as training progresses, adjusting steps with foresight rather than guesswork.
@@ -85,9 +85,9 @@ Apart from the practical usefulness of this approach, we also now have a tool th
 
 ## Closing Thoughts
 
-The metaphor of a little robot navigating a treacherous loss surface is helpful to think about here. Previous approaches told the robot while he is free to choose what direction to walk, he must follow fixed marching orders taking predetermined sized strides, or at best determine the best stride based on his own last few steps. With our latent ODE scheduler, the robot is given a map constructed from past explorations, he is able to anticipate the terrain, and adjusts his stride for the best long-term outcome even if that means suffering a momentary setback.  
+The metaphor of a little robot navigating a treacherous loss surface is helpful to think about here. Previous approaches told the robot that while he is free to choose what direction to walk, he must follow fixed marching orders taking predetermined sized strides, or at best determine the best stride based on his own last few steps. With our latent ODE scheduler, the robot is given a map of the loss surface constructed from past explorations, he is able to anticipate the terrain, and adjusts his stride for the best long-term outcome even if that means suffering a momentary setback.  
 
-As models grow in size and complexity, smarter training dynamics like this may be the key to unlocking further breakthroughs in deep learning optimization. There is no use building a larger more sophisticated models if we have no reliable way to train them.
+As models grow in size and complexity, smarter training dynamics like this may be the key to unlocking further breakthroughs in deep learning. There is no use building a larger more sophisticated models if we have no reliable way to train them.
 
 ---
 
