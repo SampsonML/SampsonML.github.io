@@ -2,7 +2,7 @@
 layout: post
 title: Dynamics of learning
 date: 2025-10-1
-description: Dynamics of learning
+description: Creating a generative learning rate scheduler with latent ODEs
 tags: latent ODE
 categories: optimization
 ---
