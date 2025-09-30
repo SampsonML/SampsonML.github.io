@@ -7,7 +7,7 @@ categories: optimization
 ---
 
 # Dynamics of Learning: Generative Learning Rate Schedules with Latent ODEs
-### equal contribution with [Peter Melchior](https://pmelchior.net/)
+### Equal contribution with [Peter Melchior](https://pmelchior.net/)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.23052-<COLOR>.svg)](https://arxiv.org/abs/2509.23052)
 
 <img src="/assets/img/robo_map.png" alt="robo map" style="max-width:100%; height:auto;"/>
