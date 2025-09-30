@@ -77,7 +77,7 @@ While this is clearly not a rigourous proof, it shows at the very least our LODE
 
 ## Why This Matters
 
-Modern training pipelines already generate tons of metrics during hyperparameter sweeps. The Latent ODE scheduler shows we can recycle that information to *learn how to learn*. Instead of blindly applying predefined schedules, we can now generate **custom, foresight-driven schedules** tailored to each task.  
+Modern training pipelines already generate tons of metrics during hyperparameter sweeps. The LODE scheduler shows we can recycle that information to *learn how to learn*. Instead of blindly applying predefined schedules, we can now generate **custom, foresight-driven schedules** tailored to each task.  
 
 This shift could become increasingly important for larger models, where wasted compute and poor convergence are especially costly.
 
