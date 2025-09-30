@@ -90,7 +90,7 @@ Apart from the practical usefulness of this approach, we also now have a tool th
 
 The metaphor of a little robot navigating a treacherous loss surface is helpful to think about here. Previous approaches told the robot that while he is free to choose what direction to walk, he must follow fixed marching orders taking predetermined sized strides, or at best determine the best stride based on his own last few steps. With our latent ODE scheduler, the robot is given a map of the loss surface constructed from past explorations, he is able to anticipate the terrain, and adjusts his stride for the best long-term outcome even if that means suffering a momentary setback.  
 
-As models grow in size and complexity, smarter training dynamics like this may be the key to unlocking further breakthroughs in deep learning. There is no use building a larger more sophisticated models if we have no reliable way to train them.
+As models grow in size and complexity, smarter training dynamics like this may be the key to unlocking further breakthroughs in deep learning. There is no use building larger more sophisticated models if we have no reliable way to train them.
 
 ---
 
