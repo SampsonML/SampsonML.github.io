@@ -7,7 +7,7 @@ categories: optimization
 ---
 
 # Dynamics of Learning: Generative Learning Rate Schedules with Latent ODEs
-[![arXiv](https://img.shields.io/badge/arXiv-2401.07313-<COLOR>.svg)](https://arxiv.org/abs/2410.08923)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.23052-<COLOR>.svg)](https://arxiv.org/abs/2509.23052)
 
 <img src="/assets/img/robo_map.png" alt="robo map" style="max-width:100%; height:auto;"/>
 
@@ -93,7 +93,7 @@ As models grow in size and complexity, smarter training dynamics like this may b
 
 ---
 
-*Paper: [Dynamics of Learning: Generative Schedules from Latent ODEs](dynamics_of_learning.pdf)*  
+*Paper: [Dynamics of Learning: Generative Schedules from Latent ODEs](https://arxiv.org/abs/2509.23052)*  
 
 *Authors: Matt L. Sampson & Peter Melchior* 
 
