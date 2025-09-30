@@ -47,7 +47,7 @@ This is like giving our robot optimizer (henceforth roboptimizer) a map of the p
 ## Move fast yet surprisingly don't break things
 <img src="/assets/img/fast_robot.png" alt="running robot" style="max-width:100%; height:auto;"/>
 
-Across **Fashion-MNIST, CIFAR-100, ImageNet**, and even a **Transformer language model**, the Latent ODE scheduler beat every baseline: cosine, OneCycle, exponential decay, hypergradient descent, and reinforcement learning controllers. Quite surprisingly we see that the best performing learning rate schedules determined by our LODE scheduler often suggests significantly higher learning rates at early times than what we see in the best parametric schedules.
+Across **Fashion-MNIST, CIFAR-100, ImageNet**, and even a **Transformer language model**, the LODE scheduler beat every baseline: cosine, OneCycle, exponential decay, hypergradient descent, [schedule-free](https://arxiv.org/abs/2405.15682), and reinforcement learning controllers. Quite surprisingly we see that the best performing learning rate schedules determined by our LODE scheduler often suggests significantly higher learning rates at early times than what we see in the best parametric schedules.
 
 <img src="/assets/img/lr_paths.png" alt="lr paths" style="max-width:100%; height:auto;"/>
 
