@@ -97,4 +97,4 @@ As models grow in size and complexity, smarter training dynamics like this may b
 
 *Authors: Matt L. Sampson & Peter Melchior* 
 
-*Thank you to GPT-5 for the cute and helpful images, and thank you to the artists upon which the image generative portion of GPT-5 was trained.*
+*Thank you to GPT-5 for the cute and helpful images, and thank you to the unnamed artists upon which the image generative portion of GPT-5 was trained.*
