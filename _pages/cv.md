@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: sampson_cv_blue.pdf
+cv_pdf: sampson_cv_october_updated.pdf
 description: 
 toc:
   sidebar: left
