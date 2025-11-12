@@ -10,8 +10,9 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Matt Sampson</p><br>
-    <p>Optimization in deep learning</p><br>
-    <p>PhD candidate at Princeton</p>
+    <p>Optimization in Deep Learning</p><br>
+    <p>Physical Representations</p><br>
+    <p>AI for Science</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -31,4 +32,4 @@ Hey, I'm Matt, a PhD researcher at Princeton University working with <a href="ht
 
 Previously I was at the Australian National University where I performed numerical experiments and helped develop code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. 
 
-> **Long-term vision**:  To design optimization methods that make it possible to build and train models with a deep understanding of complex dynamical systems — enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
+> **Long-term vision**:  To design architectures and optimization methods that make it possible to build and train models with a deep understanding of complex dynamical systems — enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
