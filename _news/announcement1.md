@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Lucky to be one of 4 students from Princeton University <span style="color: #b8bb26;">**nominated**</span> for the 2025 Google PhD Fellowship! The first nomination from the astrophysical sciences deptartment at Princeton
+Lucky to be one of 4 students from Princeton University <span style="color: #8ec07c;">**nominated**</span> for the 2025 Google PhD Fellowship! The first nomination from the astrophysical sciences deptartment at Princeton
