@@ -127,6 +127,11 @@ html[data-theme="dark"] {
     color: #{$cyan-gruv-bright} !important; 
   }
 
+  // change the h2 header colours 
+  h2 a {
+    color: #{$cyan-gruv-bright} !important; 
+  }
+
   .only-light {
     display: none;
   }
