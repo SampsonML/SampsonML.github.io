@@ -9,7 +9,6 @@ profile:
   image: matt_dither.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p style="color:#8ec07c;">Matt Sampson</p><br>
     <p style="color:#8ec07c;">Stochastic Optimization</p><br>
     <p style="color:#8ec07c;">Physical Representations</p><br>
     <p style="color:#8ec07c;">AI for Science</p>
