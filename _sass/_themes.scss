@@ -10,8 +10,8 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-gruv-bright};
-  --global-hover-color: #{$cyan-gruv};
+  --global-theme-color: #{$cyan-gruv-medium};
+  --global-hover-color: #{$cyan-gruv-medium};
   --global-hover-text-color: #{$fg-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
@@ -43,6 +43,11 @@
   --global-danger-block-bg: #553d3c;
   --global-danger-block-text: #{$red-gruv-bright};
   --global-danger-block-title: #{$red-gruv};
+
+    // change title colour 
+  .post-title {
+    color: #{$cyan-gruv-medium} !important; 
+  }
 
   #light-toggle-system {
     padding-left: 10px;
@@ -116,6 +121,11 @@ html[data-theme="dark"] {
   --global-danger-block-bg: #553d3c;
   --global-danger-block-text: #{$red-gruv-bright};
   --global-danger-block-title: #{$red-gruv};
+
+  // change title colour 
+  .post-title {
+    color: #{$cyan-gruv-bright} !important; 
+  }
 
   .only-light {
     display: none;
