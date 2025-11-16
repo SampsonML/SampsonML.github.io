@@ -6,7 +6,7 @@ description: Creating a generative learning rate scheduler with latent ODEs
 categories: optimization
 ---
 
-# Dynamics of Learning: Generative Learning Rate Schedules with Latent ODEs
+<h1 style="color: #8ec07c;">Dynamics of Learning: Generative Learning Rate Schedules with Latent ODEs</h1>
 ### Equal contribution with [Peter Melchior](https://pmelchior.net/)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.23052-<COLOR>.svg)](https://arxiv.org/abs/2509.23052)
 
@@ -18,7 +18,7 @@ Our new paper, *Dynamics of Learning: Generative Schedules from Latent ODEs* tak
 
 ---
 
-## Why learning rate scheduling matters
+<h2>Why learning rate scheduling matters</h2>
 
 We may think of training deep neural networks akin to guiding a little robot to walk across a mountainous loss surface, eventually finding the deepest well in the land. Traditional parametric schedules such as cosine decay, onecycle, exponential decay, are like giving the robot a fixed marching pattern, regardless of the terrain. They work decently but lack foresight: they don’t know whether a steep hill or a flat valley is coming next.  
 
@@ -26,7 +26,7 @@ Other approaches, like reinforcement learning–based schedulers, hypergradient 
 
 ---
 
-## The core idea: Can we learn a functional representation of DNN training?
+<h2>The core idea: Can we learn a functional representation of DNN training?</h2>
 
 We learn a **latent representation of training dynamics**, training loss, validation accuracy and learning rate, from the observation of prior runs, which one would expect to have run anyway during a standard hyperparameter sweep. Our loss function is simply the square reconstruction error of these training trajectories plus some path-length regularization terms [see our previous work here](https://arxiv.org/abs/2410.08923). By encoding training loss, validation accuracy, and learning rate into a latent space and evolving these quantities via an ODE, the system can simulate how training would unfold with different parameters, namely the learning rate schedule. Hence we have the creation of our latent ODE scheduler (LODE scheduler). 
 
@@ -45,7 +45,7 @@ This is like giving our robot optimizer (henceforth roboptimizer) a map of the p
 
 ---
 
-## Move fast yet surprisingly don't break things
+<h2>Move fast yet surprisingly don't break things</h2>
 <img src="/assets/img/fast_robot.png" alt="running robot" style="max-width:100%; height:auto;"/>
 
 Across **Fashion-MNIST, CIFAR-100, ImageNet**, and even a **Transformer language model**, the LODE scheduler performs better than the baselines: cosine, OneCycle, exponential decay, hypergradient descent, [schedule-free](https://arxiv.org/abs/2405.15682), and reinforcement learning controllers. Quite surprisingly we see that the best performing learning rate schedules determined by our LODE scheduler often suggests significantly higher learning rates at early times than what we see in the best parametric schedules.
@@ -65,7 +65,7 @@ This insight of very large early step-sizes is not new, and there has been some 
 
 ---
 
-## Are we truly *learning* the optimisation dynamics?
+<h2>Are we truly *learning* the optimisation dynamics?</h2>
 A natural question here would be how well have we learned a representation of the optimizer dynamics, could we perhaps just always be estimating the same (well performing) schedule for each model/dataset combination?
 
 Well, great question, glad you asked. To test this question we may probe the generated schedules and hence training results we get when asking to prioritize results at different times. For example, instead of making a schedule resulting in the best validation loss at the end of training, how about one that minimises this loss after only 50% of the training, what about 10%? The following figure shows the test accuracy, and generated learning rate schedules from the LODE scheduler when asking the validation loss to be minimised at ~8%, 16%, 50%, and 100% of the total training time. We can see if we desire early performance, we can get it with no changes to the scheduler at all (except of course telling it when we want our loss minimized).
@@ -76,7 +76,7 @@ While this is clearly not a rigourous proof, it shows at the very least our LODE
 
 ---
 
-## Why This Matters
+<h2>Why This Matters</h2>
 
 Modern training pipelines already generate tons of metrics during hyperparameter sweeps. The LODE scheduler shows we can recycle that information to *learn how to learn*. Instead of blindly applying predefined schedules, we can now generate **custom, foresight-driven schedules** tailored to each task.  
 
@@ -86,7 +86,7 @@ Apart from the practical usefulness of this approach, we also now have a tool th
 
 ---
 
-## Closing Thoughts
+<h2>Closing Thoughts</h2>
 
 The metaphor of a little robot navigating a treacherous loss surface is helpful to think about here. Previous approaches told the robot that while he is free to choose what direction to walk, he must follow fixed marching orders taking predetermined sized strides, or at best determine the best stride based on his own last few steps. With our latent ODE scheduler, the robot is given a map of the loss surface constructed from past explorations, he is able to anticipate the terrain, and adjusts his stride for the best long-term outcome even if that means suffering a momentary setback.  
 
