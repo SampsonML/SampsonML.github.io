@@ -21,7 +21,7 @@ pagination:
 {% assign blog_name_size = site.blog_name | size %}
 {% assign blog_description_size = site.blog_description | size %}
 <div class="header-bar">
-  <h1 style="color:#880808">research thoughts</h1>
+  <h1 style="color:#8ec07c">research thoughts</h1>
   <h2 class="subtitle">a less formal way to share my scientific ideas</h2>
 </div>
 
