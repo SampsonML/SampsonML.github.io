@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: matt_dither.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Matt Sampson</p><br>
