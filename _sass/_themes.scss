@@ -10,9 +10,9 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$green-gruv-bright};
-  --global-hover-color: #{$green-gruv};
-  --global-hover-text-color: #{$white-color};
+  --global-theme-color: #{$cyan-gruv-bright};
+  --global-hover-color: #{$cyan-gruv};
+  --global-hover-text-color: #{$fg-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$cream-color};
@@ -84,8 +84,8 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{$bg-color-medium};   // Gruvbox Code Block/Secondary BG (282828)
   --global-text-color: #{$fg-color};             // Gruvbox Foreground Text (ebdbb2)
   --global-text-color-light: #{$grey-gruv-0};    // Lighter Gruvbox Grey (a89984) - for less important text
-  --global-theme-color: #{$green-gruv-bright};  // Gruvbox Theme Color (fe8019) - Often used for links/accents
-  --global-hover-color: #{$green-gruv};         // Darker Gruvbox Orange for hover
+  --global-theme-color: #{$cyan-gruv-bright};  // Gruvbox Theme Color (fe8019) - Often used for links/accents
+  --global-hover-color: #{$cyan-gruv};         // Darker Gruvbox Orange for hover
   --global-hover-text-color: #{$fg-color};       // Foreground text on hover
   --global-footer-bg-color: #{$bg-color-medium}; // Secondary Gruvbox BG (282828)
   --global-footer-text-color: #{$grey-gruv-1};   // Darker Gruvbox Grey (928374)
