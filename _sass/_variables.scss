@@ -4,6 +4,36 @@
  ******************************************************************************/
 
 @use "sass:color";
+// --- GRUVBOX PALETTE (DARK HARD) ---
+// Backgrounds and Foreground
+$bg-color-hard: #1d2021 !default;
+$bg-color-medium: #282828 !default;
+$fg-color: #ebdbb2 !default; // Foreground text
+
+// Primary Accent Colors
+$red-gruv: #cc241d !default;
+$green-gruv: #98971a !default;
+$yellow-gruv: #d79921 !default;
+$blue-gruv: #458588 !default;
+$purple-gruv: #b16286 !default;
+$cyan-gruv: #689d6a !default;
+$orange-gruv: #d65d0e !default;
+
+// Bright Accent Colors (for syntax/highlights)
+$red-gruv-bright: #fb4934 !default;
+$green-gruv-bright: #b8bb26 !default;
+$yellow-gruv-bright: #fabd2f !default;
+$blue-gruv-bright: #83a598 !default;
+$purple-gruv-bright: #d3869b !default;
+$cyan-gruv-bright: #8ec07c !default;
+$orange-gruv-bright: #fe8019 !default;
+
+// Gruvbox Grey Scale / Contrast
+$grey-gruv-0: #a89984 !default; // Light grey/comment
+$grey-gruv-1: #928374 !default; // Darker grey/comment
+$grey-gruv-2: #3c3836 !default; // Darkest contrast for borders/dividers
+$grey-gruv-3: #504945 !default; // Medium contrast for status lines
+
 
 // Colors
 $red-color: #ff3636 !default;
