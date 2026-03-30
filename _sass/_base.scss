@@ -9,6 +9,7 @@
   line-height: 1.6;
   padding: 1.2rem 1.5rem;
   margin: 1.5rem 0;
+  clear: both;
   border: 1px solid var(--global-theme-color);
   border-radius: 6px;
   background: var(--global-code-bg-color);
@@ -22,7 +23,7 @@
   color: var(--global-theme-color);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 @keyframes terminal-glow {
