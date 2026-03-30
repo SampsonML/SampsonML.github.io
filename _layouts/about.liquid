@@ -14,6 +14,31 @@ layout: default
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
+  {% if page.typing_tagline %}
+  <div class="typing-tagline" style="margin-bottom: 1.5rem; font-family: monospace; font-size: 1.1rem;">
+    <span style="color: var(--global-theme-color);">>&nbsp;</span><span id="typed-tagline"></span><span id="typing-cursor" style="color: var(--global-theme-color);">|</span>
+  </div>
+  <style>
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    #typing-cursor { animation: blink 0.7s step-end infinite; }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var text = {{ page.typing_tagline | jsonify }};
+      var el = document.getElementById("typed-tagline");
+      var i = 0;
+      function type() {
+        if (i < text.length) {
+          el.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, 60);
+        }
+      }
+      type();
+    });
+  </script>
+  {% endif %}
+
   <article>
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">

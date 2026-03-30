@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle:
+typing_tagline: "optimizing the path to artificial intelligence."
 
 profile:
   align: right
