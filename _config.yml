@@ -5,11 +5,11 @@
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Matt
 middle_name: L.
-last_name: Sampson
+last_name: Wiemann
 contact_note: >
   Send an email to collaborate or chat about machine learning or physics!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website for Matt Sampson. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Personal website for Matt Wiemann. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
@@ -261,7 +261,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Sampson]
+  last_name: [Wiemann, Sampson]
   first_name: [Matt, L.]
 
   style: apa
