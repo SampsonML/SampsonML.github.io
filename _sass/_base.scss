@@ -2,6 +2,34 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Vision terminal card
+.vision-terminal {
+  font-family: monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 6px;
+  background: var(--global-code-bg-color);
+  color: var(--global-text-color);
+  box-shadow: 0 0 12px rgba(142, 192, 124, 0.25), 0 0 4px rgba(142, 192, 124, 0.15);
+  animation: terminal-glow 3s ease-in-out infinite;
+}
+
+.vision-label {
+  font-weight: bold;
+  color: var(--global-theme-color);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+@keyframes terminal-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(142, 192, 124, 0.15), 0 0 2px rgba(142, 192, 124, 0.1); }
+  50% { box-shadow: 0 0 16px rgba(142, 192, 124, 0.35), 0 0 6px rgba(142, 192, 124, 0.2); }
+}
+
 // Typography
 
 p,

@@ -32,4 +32,7 @@ Hey, I'm Matt, a PhD researcher at Princeton University working with <a href="ht
 
 Previously I was at the Australian National University where I performed numerical experiments and helped develop code to simulate cosmic ray propagation through a dynamically evolving turbulent plasma. 
 
-> **Long-term vision**:  To design architectures and optimization methods that make it possible to build and train models with a deep understanding of complex dynamical systems — enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
+<div class="vision-terminal">
+<span class="vision-label">Long-term vision</span><br>
+To design architectures and optimization methods that make it possible to build and train models with a deep understanding of complex dynamical systems — enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
+</div>
