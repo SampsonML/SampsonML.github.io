@@ -13,6 +13,8 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
+*\* previously published as Matt L. Sampson*
+
 <div class="publications">
 
 {% bibliography %}
