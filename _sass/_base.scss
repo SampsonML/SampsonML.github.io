@@ -92,18 +92,17 @@
   }
 }
 
-// Bio terminal pane
-.bio-terminal {
+// Section terminal panes
+.section-terminal {
   font-family: monospace;
   background: rgba(29, 32, 33, 0.88);
   border: 1px solid rgba(142, 192, 124, 0.4);
   border-radius: 6px;
   box-shadow: 0 0 12px rgba(142, 192, 124, 0.15);
   margin-bottom: 1.5rem;
-  clear: both;
 }
 
-.bio-terminal-bar {
+.section-terminal-bar {
   display: flex;
   align-items: center;
   padding: 8px 12px;
@@ -111,7 +110,7 @@
   gap: 6px;
 }
 
-.bio-terminal-body {
+.section-terminal-body {
   padding: 1rem 1.2rem;
   font-size: 0.95rem;
   line-height: 1.7;
@@ -120,6 +119,29 @@
 .bio-cmd {
   color: #a89984;
   margin-bottom: 0.8rem;
+  font-family: monospace;
+}
+
+// Bio grid layout
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.bio-grid-profile {
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bio-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Terminal-style section headings

@@ -54,66 +54,95 @@ layout: default
   {% endif %}
 
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-        <!-- Social -->
-        {% if page.social %}
-          <div class="social">
-            <div class="contact-icons">{% include social.liquid %}</div>
-          </div>
-        {% endif %}
-      </div>
-    {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <!-- Bio terminal with profile grid -->
+    <div class="section-terminal">
+      <div class="section-terminal-bar">
+        <span class="hero-terminal-dot" style="background:#cc241d;"></span>
+        <span class="hero-terminal-dot" style="background:#d79921;"></span>
+        <span class="hero-terminal-dot" style="background:#98971a;"></span>
+        <span class="hero-terminal-title">~/bio.md</span>
+      </div>
+      <div class="section-terminal-body">
+        <p class="bio-cmd"><span class="terminal-prompt">$</span> cat bio.md</p>
+        <div class="bio-grid">
+          <div class="bio-grid-text">{{ content }}</div>
+          {% if page.profile %}
+          <div class="bio-grid-profile">
+            {% if page.profile.image %}
+              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% if page.profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+              {%
+                include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+                cache_bust=true
+              %}
+            {% endif %}
+            {% if page.profile.more_info %}
+              <div class="more-info">{{ page.profile.more_info }}</div>
+            {% endif %}
+            {% if page.social %}
+              <div class="social">
+                <div class="contact-icons">{% include social.liquid %}</div>
+              </div>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2 class="terminal-heading">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">
-          <span class="terminal-prompt">&gt; </span>news<span class="terminal-cursor">_</span>
-        </a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <div class="section-terminal">
+        <div class="section-terminal-bar">
+          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
+          <span class="hero-terminal-dot" style="background:#d79921;"></span>
+          <span class="hero-terminal-dot" style="background:#98971a;"></span>
+          <span class="hero-terminal-title">~/news.log</span>
+        </div>
+        <div class="section-terminal-body">
+          <p class="bio-cmd"><span class="terminal-prompt">$</span> tail -n 5 news.log</p>
+          {% include news.liquid limit=true %}
+        </div>
+      </div>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2 class="terminal-heading">
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">
-          <span class="terminal-prompt">&gt; </span>latest posts<span class="terminal-cursor">_</span>
-        </a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <div class="section-terminal">
+        <div class="section-terminal-bar">
+          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
+          <span class="hero-terminal-dot" style="background:#d79921;"></span>
+          <span class="hero-terminal-dot" style="background:#98971a;"></span>
+          <span class="hero-terminal-title">~/posts/</span>
+        </div>
+        <div class="section-terminal-body">
+          <p class="bio-cmd"><span class="terminal-prompt">$</span> ls -t posts/</p>
+          {% include latest_posts.liquid %}
+        </div>
+      </div>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2 class="terminal-heading">
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">
-          <span class="terminal-prompt">&gt; </span>selected publications<span class="terminal-cursor">_</span>
-        </a>
-      </h2>
-      <p style="font-style: italic; color: var(--global-text-color-light); font-size: 0.9rem;">* previously published as Matt L. Sampson</p>
-      {% include selected_papers.liquid %}
+      <div class="section-terminal">
+        <div class="section-terminal-bar">
+          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
+          <span class="hero-terminal-dot" style="background:#d79921;"></span>
+          <span class="hero-terminal-dot" style="background:#98971a;"></span>
+          <span class="hero-terminal-title">~/papers.bib</span>
+        </div>
+        <div class="section-terminal-body">
+          <p class="bio-cmd"><span class="terminal-prompt">$</span> grep --author="Wiemann" papers.bib</p>
+          <p style="font-style: italic; color: var(--global-text-color-light); font-size: 0.9rem;">* previously published as Matt L. Sampson</p>
+          {% include selected_papers.liquid %}
+        </div>
+      </div>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
