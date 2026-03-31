@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle:
-typing_tagline: "optimizing the path to artificial intelligence."
+typing_tagline: "using the foundations of physics to build artificial intelligence."
 
 profile:
   align: right
