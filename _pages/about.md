@@ -7,7 +7,7 @@ typing_tagline: "optimizing the path to artificial intelligence."
 
 profile:
   align: right
-  image: matt_dither.png
+  image: matt_dither_short.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p style="color:#8ec07c;">Stochastic Optimization</p><br>
