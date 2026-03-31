@@ -9,10 +9,7 @@ profile:
   align: right
   image: matt_dither.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p style="color:#8ec07c;">Stochastic Optimization</p><br>
-    <p style="color:#8ec07c;">Physical Representations</p><br>
-    <p style="color:#8ec07c;">AI for Science</p>
+  more_info:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
