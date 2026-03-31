@@ -25,6 +25,7 @@
     display: block;
     object-fit: cover;
     max-height: 400px;
+    filter: brightness(0.4);
   }
 }
 
@@ -45,7 +46,7 @@
   background: rgba(29, 32, 33, 0.88);
   border: 1px solid rgba(142, 192, 124, 0.4);
   border-radius: 6px;
-  max-width: 520px;
+  max-width: 680px;
   width: 100%;
   box-shadow: 0 0 12px rgba(142, 192, 124, 0.15);
 }
@@ -72,7 +73,7 @@
 }
 
 .hero-terminal-body {
-  padding: 0.8rem 1.2rem;
+  padding: 1.2rem 1.5rem;
 
   p {
     margin: 0;
@@ -83,7 +84,7 @@
   .post-title {
     margin: 0.2rem 0 0.4rem;
     color: #ebdbb2 !important;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
 
   .hero-typing {
