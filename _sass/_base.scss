@@ -31,6 +31,25 @@
   50% { box-shadow: 0 0 16px rgba(142, 192, 124, 0.35), 0 0 6px rgba(142, 192, 124, 0.2); }
 }
 
+// Terminal-style section headings
+.terminal-heading {
+  font-family: monospace;
+}
+
+.terminal-prompt {
+  color: var(--global-theme-color);
+}
+
+.terminal-cursor {
+  color: var(--global-theme-color);
+  animation: cursor-blink 0.7s step-end infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 // Typography
 
 p,
