@@ -5,25 +5,36 @@ layout: default
   <div class="hero-banner">
     <img src="{{ 'assets/img/synth_brain.jpg' | relative_url }}" alt="Digital brain" />
     <div class="hero-overlay">
-      <h1 class="post-title">
-        {% if site.title == 'blank' %}
-          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-          {{ site.last_name }}
-        {% else %}
-          {{ site.title }}
-        {% endif %}
-      </h1>
-      <p class="desc">{{ page.subtitle }}</p>
+      <div class="hero-terminal">
+        <div class="hero-terminal-bar">
+          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
+          <span class="hero-terminal-dot" style="background:#d79921;"></span>
+          <span class="hero-terminal-dot" style="background:#98971a;"></span>
+          <span class="hero-terminal-title">~/about.sh</span>
+        </div>
+        <div class="hero-terminal-body">
+          <p><span class="terminal-prompt">$</span> whoami</p>
+          <h1 class="post-title">
+            {% if site.title == 'blank' %}
+              <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+              {{ site.last_name }}
+            {% else %}
+              {{ site.title }}
+            {% endif %}
+          </h1>
+          {% if page.typing_tagline %}
+          <p class="hero-typing">
+            <span class="terminal-prompt">$</span>&nbsp;<span id="typed-tagline"></span><span id="typing-cursor">|</span>
+          </p>
+          {% endif %}
+        </div>
+      </div>
     </div>
   </div>
-
   {% if page.typing_tagline %}
-  <div class="typing-tagline" style="margin-bottom: 1.5rem; font-family: monospace; font-size: 1.1rem;">
-    <span style="color: var(--global-theme-color);">>&nbsp;</span><span id="typed-tagline"></span><span id="typing-cursor" style="color: var(--global-theme-color);">|</span>
-  </div>
   <style>
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-    #typing-cursor { animation: blink 0.7s step-end infinite; }
+    #typing-cursor { animation: blink 0.7s step-end infinite; color: var(--global-theme-color); }
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
