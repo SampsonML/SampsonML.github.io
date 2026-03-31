@@ -2,33 +2,14 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
-// Vision terminal card
-.vision-terminal {
-  font-family: monospace;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  padding: 1.2rem 1.5rem;
-  margin: 4rem 0 1.5rem;
-  clear: both;
-  border: 1px solid var(--global-theme-color);
-  border-radius: 6px;
-  background: var(--global-code-bg-color);
-  color: var(--global-text-color);
-  box-shadow: 0 0 12px rgba(142, 192, 124, 0.25), 0 0 4px rgba(142, 192, 124, 0.15);
-  animation: terminal-glow 3s ease-in-out infinite;
-}
-
 .vision-label {
   font-weight: bold;
   color: var(--global-theme-color);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: 1.1rem;
-}
-
-@keyframes terminal-glow {
-  0%, 100% { box-shadow: 0 0 8px rgba(142, 192, 124, 0.15), 0 0 2px rgba(142, 192, 124, 0.1); }
-  50% { box-shadow: 0 0 16px rgba(142, 192, 124, 0.35), 0 0 6px rgba(142, 192, 124, 0.2); }
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 // Hero banner
@@ -109,6 +90,36 @@
     font-size: 0.95rem;
     color: #ebdbb2;
   }
+}
+
+// Bio terminal pane
+.bio-terminal {
+  font-family: monospace;
+  background: rgba(29, 32, 33, 0.88);
+  border: 1px solid rgba(142, 192, 124, 0.4);
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(142, 192, 124, 0.15);
+  margin-bottom: 1.5rem;
+  clear: both;
+}
+
+.bio-terminal-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(142, 192, 124, 0.2);
+  gap: 6px;
+}
+
+.bio-terminal-body {
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.bio-cmd {
+  color: #a89984;
+  margin-bottom: 0.8rem;
 }
 
 // Terminal-style section headings
