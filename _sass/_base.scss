@@ -452,6 +452,8 @@ ul.task-list input[type="checkbox"] {
 }
 
 .navbar.navbar-light {
+  font-family: monospace;
+
   a {
     &:hover {
       text-decoration: none;
@@ -460,10 +462,17 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-family: monospace;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-family: monospace;
+
+    &::after {
+      content: "/";
+      color: var(--global-theme-color);
+    }
 
     &:hover {
       color: var(--global-hover-color);
@@ -478,6 +487,14 @@ ul.task-list input[type="checkbox"] {
     &:hover {
       color: var(--global-hover-color);
     }
+  }
+
+  // Hide ls prefix on search and theme toggle
+  .nav-item button .nav-link::before,
+  .nav-item button .nav-link::after,
+  .toggle-container button::before,
+  .toggle-container button::after {
+    content: none;
   }
 
   .navbar-brand.social {
