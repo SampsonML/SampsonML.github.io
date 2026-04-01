@@ -5,7 +5,7 @@
   var canvas = document.getElementById('particle-network');
   var ctx = canvas.getContext('2d');
   var particles = [];
-  var numParticles = 60;
+  var numParticles = Math.floor((window.innerWidth * window.innerHeight) / 12000);
   var connectDist = 150;
   var color = '142,192,124';
 
@@ -39,7 +39,7 @@
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(' + color + ',0.5)';
+      ctx.fillStyle = 'rgba(' + color + ',0.6)';
       ctx.fill();
 
       for (var j = i + 1; j < particles.length; j++) {
@@ -51,7 +51,7 @@
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
           ctx.lineTo(p2.x, p2.y);
-          ctx.strokeStyle = 'rgba(' + color + ',' + (0.3 * (1 - dist / connectDist)) + ')';
+          ctx.strokeStyle = 'rgba(' + color + ',' + (0.4 * (1 - dist / connectDist)) + ')';
           ctx.lineWidth = 0.5;
           ctx.stroke();
         }
