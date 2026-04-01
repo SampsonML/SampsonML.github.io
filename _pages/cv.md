@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: wiemann_cv_2026_march.pdf
+cv_pdf: Wiemann_updated_cv.pdf
 description: 
 toc:
   sidebar: left
