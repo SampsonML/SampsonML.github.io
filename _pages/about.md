@@ -25,9 +25,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hey, I'm Matt, a PhD researcher at Princeton University working with <a href="https://pmelchior.net" style="font-weight: bold; color:#8ec07c;">Prof. Peter Melchior</a>. I am part of the <a href="https://dynamical-learning-lab.github.io/" style="font-weight: bold; color:#8ec07c;">Dynamical Learning Lab</a> where I research ways to advance machine learning and science, particularly focusing on representation learning, stochastic optimization, and dynamical systems. Physics allows us to uncover order from chaos. My aim is to bring this approach to the field of machine learning, because no matter how complex and advanced our models become, they are only as useful as our ability to train them.
+I'm Matt, a final-year PhD candidate at Princeton University working with <a href="https://pmelchior.net" style="font-weight: bold; color:#8ec07c;">Prof. Peter Melchior</a> in the <a href="https://dynamical-learning-lab.github.io/" style="font-weight: bold; color:#8ec07c;">Dynamical Learning Lab</a>. My research focuses on stochastic optimization, representation learning, and dynamical systems, with the goal of using principles from physics to build more capable and trainable models.
 
 Prior to Princeton, I developed large-scale simulations of complex physical systems at the Australian National University.
 
+I am on the job market for Fall 2027.
+
 <span class="vision-label">Long-term vision</span><br>
-To design architectures and optimization methods that make it possible to build and train models with a deep understanding of complex dynamical systems — enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
+To design architectures and optimization methods that enable models to develop a deep understanding of complex dynamical systems, enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
