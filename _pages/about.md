@@ -29,7 +29,7 @@ I'm Matt, a final-year PhD candidate at Princeton University working with <a hre
 
 Prior to Princeton, I developed large-scale simulations of complex physical systems at the Australian National University.
 
-<span class="job-market-badge">󰙨 I am on the job market for Fall 2027. 󰧑</span>
+<span class="job-market-badge"> > I am on the job market for Fall 2027. </span>
 
 <span class="vision-label">Long-term vision</span><br>
 To design architectures and optimization methods that enable models to develop a deep understanding of complex dynamical systems, enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
