@@ -80,6 +80,25 @@
     width: $back-to-top-width;
     z-index: $back-to-top-z-index;
   }
+
+  // Light mode: force white text inside terminal panes
+  .section-terminal-body,
+  .hero-terminal-body {
+    color: #{$fg-color};
+
+    p, span, div, li, td, th, strong, em, h1, h2, h3, h4, h5, h6 {
+      color: #{$fg-color};
+    }
+
+    a {
+      color: #{$cyan-gruv-bright};
+    }
+  }
+
+  .hero-typing,
+  .hero-typing span {
+    color: #{$cyan-gruv-bright} !important;
+  }
 }
 
 // --- GRUVBOX DARK THEME (The main transformation) ---
