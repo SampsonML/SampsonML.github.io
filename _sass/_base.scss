@@ -83,13 +83,17 @@
 
   .post-title {
     margin: 0.2rem 0 0.4rem;
-    color: #ebdbb2 !important;
+    color: #8ec07c !important;
     font-size: 2.2rem;
   }
 
   .hero-typing {
     font-size: 0.95rem;
-    color: #ebdbb2;
+    color: #ebdbb2 !important;
+
+    span {
+      color: #ebdbb2 !important;
+    }
   }
 }
 
