@@ -53,7 +53,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-lucky-to-be-one-of-4-students-from-princeton-university-nominated-for-the-2025-google-phd-fellowship-the-first-nomination-from-the-astrophysical-sciences-deptartment-at-princeton",
+            },},{id: "news-lucky-to-be-one-of-4-students-from-princeton-university-nominated-for-the-2025-google-phd-fellowship-the-first-nomination-from-the-astrophysical-sciences-department-at-princeton",
           title: 'Lucky to be one of 4 students from Princeton University nominated for the...',
           description: "",
           section: "News",},{id: "news-congratulations-to-columbia-undergraduate-angelina-yan-on-the-acceptance-of-her-neurips-workshop-paper-a-novel-approach-to-classification-of-ecg-arrhythmia-types-with-latent-odes",
