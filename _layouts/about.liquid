@@ -208,6 +208,24 @@ layout: default
       </div>
     {% endif %}
 
+    <!-- Visitor map -->
+    {% if site.clustrmaps and site.clustrmaps.enabled %}
+      <div class="section-terminal">
+        <div class="section-terminal-bar">
+          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
+          <span class="hero-terminal-dot" style="background:#d79921;"></span>
+          <span class="hero-terminal-dot" style="background:#98971a;"></span>
+          <span class="hero-terminal-title">~/visitors.map</span>
+        </div>
+        <div class="section-terminal-body">
+          <p class="bio-cmd"><span class="terminal-prompt">$</span> cat visitors.map</p>
+          <div style="text-align: center;">
+            {{ site.clustrmaps.embed }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
