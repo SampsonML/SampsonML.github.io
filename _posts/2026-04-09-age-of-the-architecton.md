@@ -137,7 +137,7 @@ The age of the Architecton is here. Prepare accordingly.
 
 <h2 id="acknowledgments" style="color: #8ec07c;">Acknowledgments</h2>
 
-This essay has been inspired by numerous conversations with my classmates, and faculty at Princeton. Particularly from discussions with Peter Melchior, Christian Jesperson, and Lizhou Sha in our machine learning journal club started by Benjamin Remy, as well as discussions and editing tips from Angelina Yan.
+This essay has been inspired by numerous conversations with my classmates, and faculty at Princeton. Particularly from discussions with Peter Melchior, Christian Jesperson, Lizhou Sha, and Andrew Saydjari in our machine learning journal club started by Benjamin Remy, as well as discussions and editing tips from Angelina Yan.
 
 ---
 
