@@ -37,9 +37,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-the-age-of-the-architecton",
+        },{id: "post-the-age-of-the-architecton-redefining-the-landscape-of-a-scientist-in-the-era-of-ai",
         
-          title: "The Age of the Architecton",
+          title: "The Age of the Architecton: Redefining the Landscape of a Scientist in the...",
         
         description: "Redefining the landscape of a scientist in the era of AI",
         section: "Posts",
