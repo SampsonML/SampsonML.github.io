@@ -1,20 +1,24 @@
 ---
 layout: post
-title: The Age of the Architecton
+title: "The Age of the Architecton: Redefining the Landscape of a Scientist in the Era of AI"
 date: 2026-04-09
 description: Redefining the landscape of a scientist in the era of AI
 categories: essays
 toc:
   sidebar: left
+_styles: >
+  .post-title { color: #8ec07c; }
+  #toc-sidebar .nav-link {
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+  }
+  #toc-sidebar .nav .nav .nav-link {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
 ---
 
-<h1 style="color: #8ec07c;">The Age of the Architecton: Redefining the Landscape of a Scientist in the Era of AI</h1>
-
-<p>
-  <a href="{{ '/assets/pdf/age_of_architecton_v2.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" download><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
-  &nbsp;&middot;&nbsp;
-  <a href="#recommendations"><i class="fa-solid fa-arrow-down"></i> Jump to recommendations</a>
-</p>
+<p><a href="{{ '/assets/pdf/age_of_architecton_v2.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" download><i class="fa-solid fa-file-pdf"></i> Download PDF</a></p>
 
 *In a hurry? [Jump straight to my practical recommendations →](#recommendations)*
 
