@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-dynamics-of-learning",
+        },{id: "post-the-age-of-the-architecton",
+        
+          title: "The Age of the Architecton",
+        
+        description: "Redefining the landscape of a scientist in the era of AI",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/age-of-the-architecton/";
+          
+        },
+      },{id: "post-dynamics-of-learning",
         
           title: "Dynamics of learning",
         
