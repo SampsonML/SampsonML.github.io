@@ -8,14 +8,7 @@ categories: essays
 
 <h1 style="color: #8ec07c;">The Age of the Architecton: Redefining the Landscape of a Scientist in the Era of AI</h1>
 
-<a
-  href="{{ '/assets/pdf/age_of_architecton.pdf' | relative_url }}"
-  target="_blank"
-  rel="noopener noreferrer"
-  download
->
-  <i class="fa-solid fa-file-pdf"></i> Download PDF
-</a>
+<p><a href="{{ '/assets/pdf/age_of_architecton.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" download><i class="fa-solid fa-file-pdf"></i> Download PDF</a></p>
 
 **Abstract.** The rapid advancement of AI systems is fundamentally reshaping what it means to be a scientist. While technical competence becomes commoditized, the most valuable scientific skill remains the ability to ask the right questions, identify the right problems, and turn fragmented pieces of knowledge into science. Drawing on Kant's concept of the Architecton, this essay argues that the future scientist is not a labourer displaced by machines, but a master builder empowered by them to create things greater than previously possible. It offers practical guidance for early career researchers navigating this transition and explores how one may cultivate this ability. The central argument of this essay is one of optimism.
 
@@ -24,7 +17,7 @@ categories: essays
 
 ---
 
-<h2>Introduction</h2>
+<h2 style="color: #8ec07c;">Introduction</h2>
 
 The history of science is not a history of tools and instruments, but a history of questions. That is not to say that tools and instruments hold no scientific value, in fact shortly I will argue quite the opposite. No, my point is that science, what it means to be a scientist, is about asking the right questions at the right time. This has historically been true, but there are louder and louder claims of the ability of AI to in fact ask these questions, moving itself from a tool, to the scientist.
 
@@ -32,7 +25,7 @@ I will not speculate too heavily on what a future AI enhanced world may look lik
 
 ---
 
-<h2>What we have</h2>
+<h2 style="color: #8ec07c;">What we have</h2>
 
 Here I make a distinction between the capabilities of current AI tools, and expected capabilities of future tools, and present the key assumption, that things will uniformly improve, and future AI models will have the *ability* to plan, and reason in a way akin to a human scientist.
 
@@ -40,7 +33,7 @@ Current AI tools are for better or worse dominated by large language models (LLM
 
 ---
 
-<h2>What is going away</h2>
+<h2 style="color: #8ec07c;">What is going away</h2>
 
 So where does this leave us. I think it is naive to think that things will not change, or that your field will not be affected. Any field that requires even modest amounts of data analysis and/or programming is already starting to radically change. It seems clear we will soon have useful forms of hypothesis generation, and genuinely useful scientific insight coming from our AI models. This means, that in all fields technical competence will no longer be a marketable skill, it will be a requirement. You likely will not be able to land a job based on the fact that you are one of the few people used to working with some field specific data pipeline, nor that you alone have the expertise in some sub-domain of interest. To return to the example of AlphaFold, entire PhD programs were built around the experimental determination of protein structures, a process that could take years for a single protein. That work, while foundational, is now largely automated. The researchers who defined themselves solely by this technical ability found their most marketable distinction erased overnight.
 
@@ -48,13 +41,13 @@ To summarize, what is going away is the value of technical competence, and domai
 
 ---
 
-<h2>The science of implementation</h2>
+<h2 style="color: #8ec07c;">The science of implementation</h2>
 
 I think it is important here to clarify a key distinction I make in the remainder of this essay, one between *routine* (which is dying) and *creative* implementation (which is fundamental to science). Previously I argued that the emergence of AlphaFold had automated and diminished the importance of researchers skilled in the art of protein structure discovery. This needs clarification, the skills that have become devalued are the routine crystallography and wet lab skills that have existed for years allowing us to probe the structures of these proteins. However, I do not wish to imply that implementation in and of itself is a devalued, or in any way a nonscientific skill. Clever implementation *is* science, and in fact profoundly clever implementation was what allowed the team at DeepMind to create AlphaFold. Routine implementation is writing boilerplate code, taking off-the-shelf models to run on a new dataset, writing standard data pipelines. It is work where the underlying task is well laid out, the best approaches settled, and there is little room for creativity. This is the type of work that is going away, and in many cases already has. On the other hand, clever implementation is a fundamental scientific endeavor, to bring an idea to fruition often requires rethinking methods, coming up with new model architectures and optimization schemes, and in the process of bringing one's own idea to life, they provide the scientific community with a set of new ideas and approaches that previously didn't exist. This creative implementation is the modern manifestation of the Architecton.
 
 ---
 
-<h2>A case for optimism</h2>
+<h2 style="color: #8ec07c;">A case for optimism</h2>
 
 There is a lot of negative sentiment about the rise of AI in the sciences. Both from traditional scientists not willing to trust what they supposedly cannot understand, as well as those who see genuine value of current AI models, and in fact so much value they fear they will soon supplant their own position. I truly believe that AI systems will be an integral part of all areas of science moving forward. I believe that AI will be the single biggest driver of scientific progress the world will ever see. Yet AI will not sit in the driver's seat, AI will empower scientists to explore ideas at both greater depth, and breadth than previously possible. For AI models to truly take the job of a scientist, they must not only be capable, but also motivated to ask and answer the types of questions our leading scientists ask today. I have not seen any evidence that this is true, nor any progress towards creating intrinsically motivated AI systems, which, given enough time and compute, would actively choose to solve our scientific problems. There are countless examples of LLMs going off the rails when put in an endless cycle of self-prompting. What this tells me is that despite how it may feel, any motivation an AI model may have, is in fact just an imitation of the motivations we have imposed via various forms of reinforcement learning (see RLHF, also what causes sycophancy in consumer LLMs).
 
@@ -62,7 +55,7 @@ One may argue that in the near future we will have AI models far more capable th
 
 ---
 
-<h2>The Architecton</h2>
+<h2 style="color: #8ec07c;">The Architecton</h2>
 
 In ancient Greek, an Architecton (*architektōn*) is defined simply as a "chief builder" or "master craftsman". This direct definition has had many interpretations, but my favorite, and the one I use for the premise of this essay is that of the German philosopher Immanuel Kant. To summarise the thoughts from Kant's writing in *The Architecton of Pure Reason* (see [here](https://en.wikipedia.org/wiki/Critique_of_Pure_Reason) for chapter 3) we must understand his idea of the distinction between knowledge and science. As Kant implies, the Architecton turns knowledge into science, it is the imposition of systematic unity by a mind that begins with a governing question and knows where each piece belongs. The Architecton provides that unity. They are the thought leader able to create something greater than the sum of its parts.
 
@@ -70,7 +63,7 @@ Kant, who lived from 1724–1804, could not have anticipated artificial intellig
 
 ---
 
-<h2>To have a <em>good</em> idea</h2>
+<h2 style="color: #8ec07c;">To have a <em>good</em> idea</h2>
 
 Many people, far more experienced and articulate than myself have proposed an answer to this question. And while answers vary widely by individual, and by research field, the best resource I have come across for this is the talk (and transcription of) [You and Your Research](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) by Professor Richard Hamming. In this talk, Hamming describes the importance of developing research *taste*. A skill to identify problems which are interesting, and also important. Hamming states: *"The importance of a problem to a great extent depends upon, have you got a way of attacking the problem?"*. Here is the key, one must be ambitious enough to try something new, yet wise enough to know if we have the tools capable of tackling it.
 
@@ -84,7 +77,7 @@ To summarize, to me a good idea is one which is not obvious, more often than not
 
 ---
 
-<h2>Rethinking scientific careers</h2>
+<h2 style="color: #8ec07c;">Rethinking scientific careers</h2>
 
 Every year we produce more and more PhD graduates while the amount of faculty track jobs remains essentially stagnant, therefore it is more important than ever now to stand out early. This is a fundamental problem with academia, and really, not one that most people should concern themselves. I say this as the overwhelming majority of people that may come across this essay will not now, nor ever be in a position to make any meaningful change to this system. In fact, to be in a position to make these changes more than likely requires one to abandon their own scientific dreams in favour of taking on administrative responsibilities. And that is not the intended audience of this essay, this is intended as a guide for scientists, and those who wish to continue to practice science for the remainder of their careers.
 
@@ -96,29 +89,29 @@ This requirement of demonstrating oneself to be a thought leader is nothing new,
 
 ---
 
-<h2>Recommendations</h2>
+<h2 style="color: #8ec07c;">Recommendations</h2>
 
 While I have now laid out why I believe this is one of the most exciting times to be a scientist, I do think there must be some changes to how we train, and prepare to enter the field. Most prominently, at the early career and especially doctoral training stage.
 
-<h3>One must learn the tools</h3>
+<h3 style="color: #8ec07c;">One must learn the tools</h3>
 
 The first non-negotiable is to become intimately familiar with AI-based tools and workflows. Just as programming has become fundamental to so many areas of science, utilizing AI tools will soon be the same. Resistance to adopt these tools will not remove a potential advantage, but will actively handicap your capabilities compared to your peers.
 
-<h3>One must effectively wield the tools</h3>
+<h3 style="color: #8ec07c;">One must effectively wield the tools</h3>
 
 Using AI tools is not the same as utilizing AI tools. AI tools are a productivity multiplier, however if you are not asking the right questions, not using them with skill and sophistication you will simply produce a larger pile of *slop*. Coding agents specifically are great tools if you know their limitations, they are still an LLM, every word is just a token, a numerical representation. Just because one of these words may be your all important function name, `solve_MOND()`, does not mean it is seen as anything special by the coding agent. One must be excruciatingly clear with instructions and how the code operates, and ever cautious about building something that you do not already have a pretty good idea how to do on your own.
 
-<h3>Develop taste</h3>
+<h3 style="color: #8ec07c;">Develop taste</h3>
 
 One must learn to develop research taste. The most direct route is through direct mentorship with an admirable scientist, however this is not always attainable for a variety of factors. In the absence of an advisor, you must resist the temptation to pursue the easy ideas at the expense of the hard ones. It is only through looking back and seeing why your last 6 months was a futile effort that you can learn to identify the early signs of futility, and slowly build intuition about what things are good to work on. I also recommend broadening your horizons about what it means to conduct research and ask scientific questions, go to talks outside your field and note how they conduct *science*.
 
-<h3>Show your thinking</h3>
+<h3 style="color: #8ec07c;">Show your thinking</h3>
 
 One can no longer expect a well constructed paper to be enough to convince someone of your value in the modern scientific age. To be blunt, a paper cannot truly show how one thinks, and it is precisely how one thinks that will be the most important skill to demonstrate at all levels of a scientific career. Hence you must take the show on the road, present at conferences, group meetings, ask to join lab meetings of groups you find interesting. You need to maximize your exposure to people who make the hiring decisions, and crucially, they must view you as a budding Architecton.
 
 ---
 
-<h2>What if I am wrong, and our models do become <em>intrinsically motivated</em>?</h2>
+<h2 style="color: #8ec07c;">What if I am wrong, and our models do become <em>intrinsically motivated</em>?</h2>
 
 Well, in my opinion, there is really no point in preparing for this scenario as a scientist. We will end up consumers of ideas, passengers in a new age of discovery. In an ideal world, we may still reap the benefits of this society, but as time goes on we will have a smaller and smaller part to play in its continued improvement. One can argue we may still have a role to play in learning to understand these complex, and intellectually superior beings to ourselves, but even so, would we be able to determine a more effective way to communicate than they would?
 
@@ -126,7 +119,7 @@ Going down this rabbit hole leads to some dark, uncomfortable places. Even in a 
 
 ---
 
-<h2>Conclusion</h2>
+<h2 style="color: #8ec07c;">Conclusion</h2>
 
 The role of the scientist is changing, but it is not going away. If anything, the arrival of AI has enhanced what has always been the most important trait of a scientist, the ability to conceive of what does not yet exist, and the creativity and persistence to be able to construct it. Unfortunately due to the nature of academia, and large industry labs, many roles are given the title of *scientist* when in reality the work is closer to a hired gun, paid for routine technical competence, and to bring forth the ideas of the Architecton. I say this not to diminish these roles, historically these roles have been crucial to bring about almost every technical revolution we have had today. But it is these roles that are at risk of being automated away, and as we have previously labeled these roles to be the job of a scientist one may naively think that indeed the role of the scientist may be a thing of the past.
 
@@ -138,13 +131,13 @@ The age of the Architecton is here. Prepare accordingly.
 
 ---
 
-<h2>Acknowledgments</h2>
+<h2 style="color: #8ec07c;">Acknowledgments</h2>
 
 This essay has been inspired by numerous conversations with my classmates, and faculty at Princeton. Particularly from discussions with Peter Melchior, Christian Jesperson, and Lizhou Sha in our machine learning journal club started by Benjamin Remy.
 
 ---
 
-<h2>References</h2>
+<h2 style="color: #8ec07c;">References</h2>
 
 1. Hamming, R. W. (1986). *You and Your Research*. Transcript of a talk given at the Bell Communications Research Colloquium Series, Morris Research and Engineering Center, March 7, 1986. [https://www.cs.virginia.edu/~robins/YouAndYourResearch.html](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 2. Kant, I. (1998). *Critique of Pure Reason*. Translated and edited by P. Guyer and A. W. Wood. Cambridge University Press. Originally published 1781; See especially "The Architectonic of Pure Reason," A832/B860–A851/B879.
