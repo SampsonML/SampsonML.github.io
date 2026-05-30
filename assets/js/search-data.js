@@ -64,10 +64,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-lucky-to-be-one-of-4-students-from-princeton-university-nominated-for-the-2025-google-phd-fellowship-the-first-nomination-from-the-astrophysical-sciences-department-at-princeton",
-          title: 'Lucky to be one of 4 students from Princeton University nominated for the...',
-          description: "",
-          section: "News",},{id: "news-congratulations-to-columbia-undergraduate-angelina-yan-on-the-acceptance-of-her-neurips-workshop-paper-a-novel-approach-to-classification-of-ecg-arrhythmia-types-with-latent-odes",
+            },},{id: "news-congratulations-to-columbia-undergraduate-angelina-yan-on-the-acceptance-of-her-neurips-workshop-paper-a-novel-approach-to-classification-of-ecg-arrhythmia-types-with-latent-odes",
           title: 'Congratulations to Columbia undergraduate Angelina Yan on the acceptance of her NeurIPS workshop...',
           description: "",
           section: "News",},{id: "news-excited-to-share-our-latent-paper-dynamics-of-learning-generating-schedules-from-latent-odes-see-my-blog-post",
