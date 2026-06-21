@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://SampsonML.github.io/sitemap.xml
+Sitemap: https://www.mattwiemann.com/sitemap.xml
