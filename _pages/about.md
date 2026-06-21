@@ -29,7 +29,7 @@ I'm Matt, a final-year PhD candidate at Princeton University working with <a hre
 
 Prior to Princeton, I developed large-scale simulations of complex physical systems at the Australian National University.
 
-<span class="job-market-badge"> > In January 2027 I will start as a <a href="https://www.schmidtsciences.org/ai-in-science/">Schmidt AI in Science</a> postdoctoral fellow at UC San Diego, Department of Computer Science and Engineering. </span>
+<span class="job-market-badge"> <img src="{{ '/assets/img/UCSD_logo.png' | relative_url }}" alt="UC San Diego" style="height: 1.4em; vertical-align: middle; margin-right: 0.4em;"> In January 2027 I will start as a <a href="https://www.schmidtsciences.org/ai-in-science/">Schmidt AI in Science</a> postdoctoral fellow at UC San Diego, Department of Computer Science and Engineering. </span>
 
 <span class="vision-label">Long-term vision</span><br>
 To design architectures and optimization methods that enable models to develop a deep understanding of complex dynamical systems, enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
