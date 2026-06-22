@@ -83,7 +83,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # ClustrMaps visitor globe (https://clustrmaps.com)
 # Sign up, get your embed code (globe or map widget), and paste it below.
 clustrmaps:
-  enabled: true
+  enabled: false
   embed: '<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=zbg8C3_mjqKddPzAXDONEfTNjaAP8PQSM23hr5Y0jDo"></script>'
 
 # -----------------------------------------------------------------------------
