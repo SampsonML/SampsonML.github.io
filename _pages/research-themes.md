@@ -26,7 +26,7 @@ I am interested in the role of machine learning in science, and the role of phys
     <span class="hero-terminal-dot" style="background:#cc241d;"></span>
     <span class="hero-terminal-dot" style="background:#d79921;"></span>
     <span class="hero-terminal-dot" style="background:#98971a;"></span>
-    <span class="hero-terminal-title">~/causal_world_models.md</span>
+    <span class="hero-terminal-title">~/physics_informed_world_models.md</span>
   </div>
   <div class="section-terminal-body">
     <h3 class="terminal-heading" style="color:#8ec07c; margin-top:0;">Physics-informed world models</h3>
