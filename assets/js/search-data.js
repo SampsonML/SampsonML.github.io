@@ -71,10 +71,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-congratulations-to-columbia-undergraduate-angelina-yan-on-the-acceptance-of-her-neurips-workshop-paper-a-novel-approach-to-classification-of-ecg-arrhythmia-types-with-latent-odes",
-          title: 'Congratulations to Columbia undergraduate Angelina Yan on the acceptance of her NeurIPS workshop...',
-          description: "",
-          section: "News",},{id: "news-excited-to-share-our-latent-paper-dynamics-of-learning-generating-schedules-from-latent-odes-see-my-blog-post",
+            },},{id: "news-excited-to-share-our-latent-paper-dynamics-of-learning-generating-schedules-from-latent-odes-see-my-blog-post",
           title: 'Excited to share our latent paper Dynamics of learning: Generating schedules from Latent...',
           description: "",
           section: "News",},{id: "news-excited-to-release-discoverphysics-a-benchmark-for-outside-the-box-scientific-thinking-paper-here-arxiv-org-abs-2605-26087",
