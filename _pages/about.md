@@ -33,7 +33,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm Matt, a final-year PhD candidate at Princeton University working with <a href="https://pmelchior.net" style="font-weight: bold;">Prof. Peter Melchior</a> in the <a href="https://dynamical-learning-lab.github.io/" style="font-weight: bold;">Dynamical Learning Lab</a>. My research focuses on latent dynamical systems,causal representation learning, and AI for discovery, with the goal of using principles from physics to build more capable and trainable models.
+I'm Matt, a final-year PhD candidate at Princeton University working with <a href="https://pmelchior.net" style="font-weight: bold;">Prof. Peter Melchior</a> in the <a href="https://dynamical-learning-lab.github.io/" style="font-weight: bold;">Dynamical Learning Lab</a>. My research focuses on latent dynamical systems, representation learning, and AI for discovery, with the goal of using principles from physics to build more capable and trainable models.
 
 Prior to Princeton, I developed large-scale simulations of complex physical systems at the Australian National University.
 
