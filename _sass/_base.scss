@@ -6,7 +6,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
-  font-family: monospace;
+  font-family: $font-sans;
   font-size: 1.1rem;
   color: #8ec07c !important;
   border: 1px solid rgba(142, 192, 124, 0.5);
@@ -24,7 +24,7 @@
 
 .vision-label {
   font-family: $font-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--global-text-color) !important;
   letter-spacing: -0.01em;
   font-size: 1.5rem;
@@ -79,9 +79,9 @@
 }
 
 .hero-eyebrow {
-  font-family: $font-mono;
+  font-family: $font-sans;
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.72);
@@ -90,7 +90,7 @@
 
 .hero-title {
   font-family: $font-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(3rem, 7vw, 5rem);
   line-height: 1;
   letter-spacing: -0.015em;
@@ -99,8 +99,9 @@
 }
 
 .hero-subhead {
-  font-family: $font-mono;
-  font-size: 1.15rem;
+  font-family: $font-sans;
+  font-size: 1.3rem;
+  font-weight: 500;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.85);
   margin: 0 auto 2rem;
@@ -160,16 +161,18 @@
 }
 
 .section-eyebrow {
-  font-family: $font-mono;
+  font-family: $font-sans;
   font-size: 0.78rem;
-  letter-spacing: 0.08em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--global-text-color-light);
   margin: 0 0 0.4rem;
 }
 
 .section-heading {
   font-family: $font-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2.25rem;
   line-height: 1.1;
   letter-spacing: -0.01em;
@@ -179,7 +182,7 @@
 
 // Legacy terminal panes (still used on other pages): transparent and borderless
 .section-terminal {
-  font-family: $font-mono;
+  font-family: $font-sans;
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -203,7 +206,7 @@
 .bio-cmd {
   color: var(--global-text-color-light);
   margin-bottom: 0.8rem;
-  font-family: $font-mono;
+  font-family: $font-sans;
 }
 
 // Bio grid layout
@@ -248,7 +251,7 @@
 
 // Terminal-style section headings
 .terminal-heading {
-  font-family: monospace;
+  font-family: $font-sans;
 }
 
 .terminal-prompt {
@@ -461,7 +464,7 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: $font-sans;
 
     p {
       display: inline-block;
@@ -540,7 +543,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .navbar.navbar-light {
-  font-family: monospace;
+  font-family: $font-sans;
 
   a {
     &:hover {
@@ -550,12 +553,14 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
-    font-family: monospace;
+    font-family: $font-sans;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
-    font-family: monospace;
+    font-family: $font-sans;
+    font-size: 0.9rem;
+    font-weight: 500;
 
     &::after {
       content: "/";
@@ -1640,7 +1645,7 @@ figure.cover {
   }
 
   figcaption.abandoned {
-    font-family: monospace;
+    font-family: $font-sans;
     color: #23212d;
     text-transform: uppercase;
     background-color: #ee5f5b;
@@ -1648,28 +1653,28 @@ figure.cover {
 
   figcaption.finished,
   figcaption.watched {
-    font-family: monospace;
+    font-family: $font-sans;
     color: #23212d;
     text-transform: uppercase;
     background-color: #62c462;
   }
 
   figcaption.interested {
-    font-family: monospace;
+    font-family: $font-sans;
     color: #23212d;
     text-transform: uppercase;
     background-color: #7691db;
   }
 
   figcaption.paused {
-    font-family: monospace;
+    font-family: $font-sans;
     color: #23212d;
     text-transform: uppercase;
     background-color: #bdac7e;
   }
 
   figcaption.queued {
-    font-family: monospace;
+    font-family: $font-sans;
     color: #23212d;
     text-transform: uppercase;
     background-color: #9e76b5;
@@ -1677,7 +1682,7 @@ figure.cover {
 
   figcaption.reading,
   figcaption.watching {
-    font-family: monospace;
+    font-family: $font-sans;
     color: #23212d;
     text-transform: uppercase;
     background-color: #f89406;
@@ -1685,14 +1690,14 @@ figure.cover {
 
   figcaption.reread,
   figcaption.rewatch {
-    font-family: monospace;
+    font-family: $font-sans;
     color: #23212d;
     text-transform: uppercase;
     background-color: #a6517d;
   }
 
   figcaption.uncategorized {
-    font-family: monospace;
+    font-family: $font-sans;
     color: #23212d;
     text-transform: uppercase;
     background-color: #b0abb3;
