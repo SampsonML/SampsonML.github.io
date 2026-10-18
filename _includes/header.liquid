@@ -2,9 +2,7 @@
   <!-- Nav Bar -->
   {% assign navbar_position = 'sticky-top' %}
   {% if site.navbar_fixed %}{% assign navbar_position = 'fixed-top' %}{% endif %}
-  {% assign navbar_hero = '' %}
-  {% if page.permalink == '/' %}{% assign navbar_hero = 'navbar-over-hero' %}{% endif %}
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {{ navbar_position }} {{ navbar_hero }}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {{ navbar_position }}" role="navigation">
     <div class="container">
       <!-- Wordmark -->
       <a class="navbar-brand" href="{{ site.baseurl }}/">
@@ -134,22 +132,6 @@
       </div>
     </div>
   </nav>
-  {% if page.permalink == '/' %}
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var nav = document.getElementById("navbar");
-        var hero = document.querySelector(".hero-banner");
-        if (!nav || !hero) return;
-        function update() {
-          var rect = hero.getBoundingClientRect();
-          nav.classList.toggle("is-scrolled", rect.top + rect.height * 0.6 <= nav.offsetHeight);
-        }
-        window.addEventListener("scroll", update, { passive: true });
-        window.addEventListener("resize", update);
-        update();
-      });
-    </script>
-  {% endif %}
   {% if site.enable_progressbar %}
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">

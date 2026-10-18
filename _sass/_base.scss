@@ -774,9 +774,8 @@ ul.task-list input[type="checkbox"] {
 
 // Navbar customization
 //
-// Default state: frosted glass bar with a hairline border (all pages, and the
-// home page once the hero has scrolled past). On the home page the bar starts
-// transparent over the hero photo; a small script adds .is-scrolled.
+// Frosted glass bar with a hairline border on every page. On the home page the
+// hero photo runs underneath it and shows through the blur.
 
 .navbar {
   box-shadow: none;
@@ -789,43 +788,7 @@ ul.task-list input[type="checkbox"] {
     border-color 0.25s ease;
 }
 
-.navbar.navbar-over-hero:not(.is-scrolled) {
-  background-color: transparent;
-  border-bottom-color: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-
-  .navbar-brand,
-  .navbar-nav .nav-item .nav-link,
-  #light-toggle,
-  #search-toggle {
-    color: rgba(255, 255, 255, 0.82);
-  }
-
-  .navbar-brand:hover,
-  .navbar-nav .nav-item .nav-link:hover,
-  .navbar-nav .nav-item.active > .nav-link,
-  #light-toggle:hover {
-    color: #ffffff;
-  }
-
-  .navbar-toggler .icon-bar {
-    background-color: #ffffff;
-  }
-
-  .btn-pill-nav {
-    background: #e6e3dc;
-    color: #15191d !important;
-  }
-
-  // Over the photo the capsule uses a darker glass so links stay legible on light sky
-  .navbar-nav {
-    background: rgba(18, 21, 22, 0.45);
-    border-color: rgba(255, 255, 255, 0.18);
-  }
-}
-
-// On the home page the hero runs underneath the transparent bar
+// On the home page the hero runs underneath the bar
 body.fixed-top-nav .hero-banner {
   margin-top: calc(-3rem - 56px);
 }
