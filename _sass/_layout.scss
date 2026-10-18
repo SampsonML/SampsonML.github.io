@@ -6,6 +6,9 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: $font-sans;
+  font-size: 1.0625rem;
+  line-height: 1.65;
   // The full-bleed hero uses 100vw; keep a vertical scrollbar from causing horizontal scroll.
   overflow-x: hidden;
   overflow-x: clip;
@@ -18,6 +21,17 @@ body {
   h6 {
     scroll-margin-top: 66px;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 body.fixed-top-nav {

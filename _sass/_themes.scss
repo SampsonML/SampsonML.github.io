@@ -81,19 +81,6 @@
     z-index: $back-to-top-z-index;
   }
 
-  // Light mode: force light text inside the hero pane (it sits on a dark photo)
-  .hero-terminal-body {
-    color: #{$ink-text};
-
-    p, span, div, li, td, th, strong, em, h1, h2, h3, h4, h5, h6 {
-      color: #{$ink-text};
-    }
-
-    a {
-      color: #{$cyan-gruv-bright};
-    }
-  }
-
 }
 
 // --- GRUVBOX DARK THEME (The main transformation) ---

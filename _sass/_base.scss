@@ -23,10 +23,11 @@
 }
 
 .vision-label {
-  font-weight: bold;
+  font-family: $font-serif;
+  font-weight: 400;
   color: var(--global-text-color) !important;
-  letter-spacing: 0.05em;
-  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+  font-size: 1.5rem;
   margin-top: 1rem;
   display: inline-block;
 }
@@ -37,16 +38,16 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-top: -3rem; // close the container's top margin so the hero meets the navbar
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
   overflow: hidden;
-  height: clamp(420px, 62vh, 720px);
+  height: clamp(520px, 78vh, 840px);
 
   img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: 30% 55%;
+    object-position: 50% 45%;
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +58,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 55%, var(--global-bg-color) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.25) 35%, rgba(0, 0, 0, 0.25) 55%, var(--global-bg-color) 100%);
 }
 
 .hero-overlay {
@@ -69,97 +70,147 @@
   height: 100%;
 }
 
-.hero-terminal {
-  font-family: monospace;
-  background: rgba(14, 16, 18, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  max-width: 680px;
-  width: 100%;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+// Hero copy: eyebrow, serif headline, subhead, pill buttons (no container)
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  color: #ffffff;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
 }
 
-.hero-terminal-bar {
+.hero-eyebrow {
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0 0 1.25rem;
+}
+
+.hero-title {
+  font-family: $font-serif;
+  font-weight: 400;
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.015em;
+  color: #ffffff !important;
+  margin: 0 0 1.25rem;
+}
+
+.hero-subhead {
+  font-family: $font-mono;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 auto 2rem;
+  max-width: 640px;
+
+  span {
+    color: inherit;
+  }
+}
+
+.hero-actions {
   display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-pill {
+  display: inline-flex;
   align-items: center;
-  padding: 8px 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  gap: 6px;
+  padding: 0.55rem 1.25rem;
+  border-radius: 9999px;
+  font-family: $font-sans;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none !important;
+  border: 1px solid transparent;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
 }
 
-.hero-terminal-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-}
+.btn-pill-primary {
+  background: #e6e3dc;
+  color: #15191d !important;
 
-.hero-terminal-title {
-  margin-left: 8px;
-  font-size: 0.75rem;
-  color: #a89984;
-}
-
-.hero-terminal-body {
-  padding: 1.2rem 1.5rem;
-
-  p {
-    margin: 0;
-    color: #a89984;
-    font-size: 0.9rem;
-  }
-
-  .post-title {
-    margin: 0.2rem 0 0.4rem;
-    color: #ffffff !important;
-    font-size: 2.2rem;
-  }
-
-  .hero-typing {
-    font-size: 0.95rem;
-    color: #ebdbb2 !important;
-
-    span {
-      color: #ebdbb2 !important;
-    }
+  &:hover {
+    background: #ffffff;
   }
 }
 
-// Section terminal panes
+.btn-pill-ghost {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #ffffff !important;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+// Home page sections: transparent, borderless, separated by whitespace
+.home-section {
+  margin: 0 0 5rem;
+}
+
+.section-eyebrow {
+  font-family: $font-mono;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.4rem;
+}
+
+.section-heading {
+  font-family: $font-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--global-text-color);
+  margin: 0 0 1.5rem;
+}
+
+// Legacy terminal panes (still used on other pages): transparent and borderless
 .section-terminal {
-  font-family: monospace;
-  background: var(--global-card-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
+  font-family: $font-mono;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 4rem;
 }
 
 .section-terminal-bar {
   display: flex;
   align-items: center;
-  padding: 8px 12px;
+  padding: 0 0 8px;
   border-bottom: 1px solid var(--global-divider-color);
   gap: 6px;
 }
 
 .section-terminal-body {
-  padding: 1rem 1.2rem;
+  padding: 1rem 0 0;
   font-size: 0.95rem;
   line-height: 1.7;
 }
 
 .bio-cmd {
-  color: #a89984;
+  color: var(--global-text-color-light);
   margin-bottom: 0.8rem;
-  font-family: monospace;
+  font-family: $font-mono;
 }
 
 // Bio grid layout
 .bio-grid {
   display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 1.5rem;
+  grid-template-columns: 1fr 320px;
+  gap: 2.5rem;
   align-items: start;
 }
 
@@ -168,6 +219,8 @@
 
   img {
     width: 100%;
+    border-radius: 16px;
+    box-shadow: none;
   }
 }
 
@@ -176,16 +229,20 @@
     grid-template-columns: 1fr;
   }
 
-  .hero-terminal-body .post-title {
-    font-size: 1.4rem;
-  }
-
-  .hero-terminal-body {
-    padding: 0.8rem 1rem;
-  }
-
   .hero-overlay {
     padding: 1rem;
+  }
+
+  .hero-banner {
+    height: clamp(460px, 70vh, 640px);
+  }
+
+  .section-heading {
+    font-size: 1.85rem;
+  }
+
+  .home-section {
+    margin-bottom: 3.5rem;
   }
 }
 

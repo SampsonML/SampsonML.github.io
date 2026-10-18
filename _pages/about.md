@@ -4,10 +4,11 @@ title: about
 permalink: /
 subtitle:
 typing_tagline: "using the foundations of physics to build artificial intelligence."
+hero_eyebrow: "PhD candidate · Princeton University"
 
 profile:
   align: right
-  image: matt_dither.png
+  image: prof_pic_clean.jpg
   image_circular: false # crops the image to make it circular
   more_info:
 

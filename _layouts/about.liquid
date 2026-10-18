@@ -6,28 +6,25 @@ layout: default
     <img src="{{ 'assets/img/hero_bg.jpg' | relative_url }}" alt="" />
     <div class="hero-fade"></div>
     <div class="hero-overlay">
-      <div class="hero-terminal">
-        <div class="hero-terminal-bar">
-          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
-          <span class="hero-terminal-dot" style="background:#d79921;"></span>
-          <span class="hero-terminal-dot" style="background:#98971a;"></span>
-          <span class="hero-terminal-title">~/about.sh</span>
-        </div>
-        <div class="hero-terminal-body">
-          <p><span class="terminal-prompt">$</span> whoami</p>
-          <h1 class="post-title">
-            {% if site.title == 'blank' %}
-              <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-              {{ site.last_name }}
-            {% else %}
-              {{ site.title }}
-            {% endif %}
-          </h1>
-          {% if page.typing_tagline %}
-          <p class="hero-typing">
+      <div class="hero-content">
+        {% if page.hero_eyebrow %}
+          <p class="hero-eyebrow">{{ page.hero_eyebrow }}</p>
+        {% endif %}
+        <h1 class="hero-title">
+          {% if site.title == 'blank' %}
+            {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+        {% if page.typing_tagline %}
+          <p class="hero-subhead">
             <span class="terminal-prompt">$</span>&nbsp;<span id="typed-tagline"></span><span id="typing-cursor">|</span>
           </p>
-          {% endif %}
+        {% endif %}
+        <div class="hero-actions">
+          <a class="btn-pill btn-pill-primary" href="{{ '/publications/' | relative_url }}">Publications</a>
+          <a class="btn-pill btn-pill-ghost" href="{{ '/cv/' | relative_url }}">CV</a>
         </div>
       </div>
     </div>
@@ -57,15 +54,10 @@ layout: default
   <article>
 
     <!-- Bio terminal with profile grid -->
-    <div class="section-terminal">
-      <div class="section-terminal-bar">
-        <span class="hero-terminal-dot" style="background:#cc241d;"></span>
-        <span class="hero-terminal-dot" style="background:#d79921;"></span>
-        <span class="hero-terminal-dot" style="background:#98971a;"></span>
-        <span class="hero-terminal-title">~/bio.md</span>
-      </div>
-      <div class="section-terminal-body">
-        <p class="bio-cmd"><span class="terminal-prompt">$</span> cat bio.md</p>
+    <section class="home-section">
+      <p class="section-eyebrow">~/bio.md</p>
+      <h2 class="section-heading">About</h2>
+      <div class="section-body">
         <div class="bio-grid">
           <div class="bio-grid-text">{{ content }}</div>
           {% if page.profile %}
@@ -95,73 +87,53 @@ layout: default
           {% endif %}
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <div class="section-terminal">
-        <div class="section-terminal-bar">
-          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
-          <span class="hero-terminal-dot" style="background:#d79921;"></span>
-          <span class="hero-terminal-dot" style="background:#98971a;"></span>
-          <span class="hero-terminal-title">~/news.log</span>
-        </div>
-        <div class="section-terminal-body">
-          <p class="bio-cmd"><span class="terminal-prompt">$</span> tail -n 3 news.log</p>
+      <section class="home-section">
+        <p class="section-eyebrow">~/news.log</p>
+        <h2 class="section-heading">News</h2>
+        <div class="section-body">
           {% include news.liquid limit=true %}
         </div>
-      </div>
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <div class="section-terminal">
-        <div class="section-terminal-bar">
-          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
-          <span class="hero-terminal-dot" style="background:#d79921;"></span>
-          <span class="hero-terminal-dot" style="background:#98971a;"></span>
-          <span class="hero-terminal-title">~/posts/</span>
-        </div>
-        <div class="section-terminal-body">
-          <p class="bio-cmd"><span class="terminal-prompt">$</span> ls -t posts/</p>
+      <section class="home-section">
+        <p class="section-eyebrow">~/posts/</p>
+        <h2 class="section-heading">Latest posts</h2>
+        <div class="section-body">
           {% include latest_posts.liquid %}
         </div>
-      </div>
+      </section>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <div class="section-terminal">
-        <div class="section-terminal-bar">
-          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
-          <span class="hero-terminal-dot" style="background:#d79921;"></span>
-          <span class="hero-terminal-dot" style="background:#98971a;"></span>
-          <span class="hero-terminal-title">~/papers.bib</span>
-        </div>
-        <div class="section-terminal-body">
-          <p class="bio-cmd"><span class="terminal-prompt">$</span> grep --author="Wiemann" papers.bib | head -4</p>
+      <section class="home-section">
+        <p class="section-eyebrow">~/papers.bib</p>
+        <h2 class="section-heading">Selected publications</h2>
+        <div class="section-body">
           <p style="font-style: italic; color: var(--global-text-color-light); font-size: 0.9rem;">* previously published as Matt L. Sampson</p>
           {% include selected_papers.liquid %}
         </div>
-      </div>
+      </section>
     {% endif %}
 
     <!-- Visitor map -->
     {% if site.clustrmaps and site.clustrmaps.enabled %}
-      <div class="section-terminal">
-        <div class="section-terminal-bar">
-          <span class="hero-terminal-dot" style="background:#cc241d;"></span>
-          <span class="hero-terminal-dot" style="background:#d79921;"></span>
-          <span class="hero-terminal-dot" style="background:#98971a;"></span>
-          <span class="hero-terminal-title">~/visitors.map</span>
-        </div>
-        <div class="section-terminal-body">
-          <p class="bio-cmd"><span class="terminal-prompt">$</span> cat visitors.map</p>
+      <section class="home-section">
+        <p class="section-eyebrow">~/visitors.map</p>
+        <h2 class="section-heading">Visitors</h2>
+        <div class="section-body">
           <div style="text-align: center;">
             {{ site.clustrmaps.embed }}
           </div>
         </div>
-      </div>
+      </section>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
