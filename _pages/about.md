@@ -4,7 +4,6 @@ title: about
 permalink: /
 subtitle:
 typing_tagline: "using the foundations of physics to build artificial intelligence."
-hero_eyebrow: "PhD candidate · Princeton University"
 
 profile:
   align: right

@@ -1,29 +1,19 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  {% assign navbar_position = 'sticky-top' %}
+  {% if site.navbar_fixed %}{% assign navbar_position = 'fixed-top' %}{% endif %}
+  {% assign navbar_hero = '' %}
+  {% if page.permalink == '/' %}{% assign navbar_hero = 'navbar-over-hero' %}{% endif %}
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {{ navbar_position }} {{ navbar_hero }}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
-      {% endif %}
+      <!-- Wordmark -->
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        {% if site.title == 'blank' %}
+          {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+        {% else %}
+          {{- site.title -}}
+        {% endif %}
+      </a>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -59,6 +49,7 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
+            {% if p.permalink == '/cv/' %}{% continue %}{% endif %}
             {% if p.nav and p.autogen == null %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
@@ -117,6 +108,10 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          <!-- CV call-to-action -->
+          <li class="nav-item nav-item-cta {% if page.url contains '/cv/' %}active{% endif %}">
+            <a class="btn-pill btn-pill-nav" href="{{ '/cv/' | relative_url }}">CV</a>
+          </li>
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
@@ -139,6 +134,22 @@
       </div>
     </div>
   </nav>
+  {% if page.permalink == '/' %}
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var nav = document.getElementById("navbar");
+        var hero = document.querySelector(".hero-banner");
+        if (!nav || !hero) return;
+        function update() {
+          var rect = hero.getBoundingClientRect();
+          nav.classList.toggle("is-scrolled", rect.top + rect.height * 0.6 <= nav.offsetHeight);
+        }
+        window.addEventListener("scroll", update, { passive: true });
+        window.addEventListener("resize", update);
+        update();
+      });
+    </script>
+  {% endif %}
   {% if site.enable_progressbar %}
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">

@@ -7,6 +7,7 @@
 :root {
   color-scheme: light;
   --global-bg-color: #d4c8a8;
+  --global-navbar-bg-color: rgba(212, 200, 168, 0.82);
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
@@ -87,6 +88,7 @@
 html[data-theme="dark"] {
   color-scheme: dark;
   --global-bg-color: #{$ink-bg};                 // Near-black page background
+  --global-navbar-bg-color: rgba(18, 21, 22, 0.72); // Frosted navbar
   --global-code-bg-color: #{$ink-surface};       // Code block / secondary surface
   --global-text-color: #{$ink-text};             // Primary text
   --global-text-color-light: #{$ink-text-light}; // Secondary text

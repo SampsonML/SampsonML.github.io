@@ -55,7 +55,6 @@ layout: default
 
     <!-- Bio terminal with profile grid -->
     <section class="home-section">
-      <p class="section-eyebrow">Bio</p>
       <h2 class="section-heading">About</h2>
       <div class="section-body">
         <div class="bio-grid">
@@ -92,7 +91,6 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <section class="home-section">
-        <p class="section-eyebrow">Updates</p>
         <h2 class="section-heading">News</h2>
         <div class="section-body">
           {% include news.liquid limit=true %}
@@ -103,7 +101,6 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <section class="home-section">
-        <p class="section-eyebrow">Writing</p>
         <h2 class="section-heading">Latest posts</h2>
         <div class="section-body">
           {% include latest_posts.liquid %}
@@ -114,7 +111,6 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <section class="home-section">
-        <p class="section-eyebrow">Research</p>
         <h2 class="section-heading">Selected publications</h2>
         <div class="section-body">
           <p style="font-style: italic; color: var(--global-text-color-light); font-size: 0.9rem;">* previously published as Matt L. Sampson</p>
@@ -126,7 +122,6 @@ layout: default
     <!-- Visitor map -->
     {% if site.clustrmaps and site.clustrmaps.enabled %}
       <section class="home-section">
-        <p class="section-eyebrow">Visitors</p>
         <h2 class="section-heading">Visitors</h2>
         <div class="section-body">
           <div style="text-align: center;">

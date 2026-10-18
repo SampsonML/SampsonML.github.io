@@ -47,7 +47,7 @@
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: 50% 45%;
+    object-position: 50% 40%;
     position: absolute;
     top: 0;
     left: 0;
@@ -508,12 +508,68 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Navbar customization
+//
+// Default state: frosted glass bar with a hairline border (all pages, and the
+// home page once the hero has scrolled past). On the home page the bar starts
+// transparent over the hero photo; a small script adds .is-scrolled.
 
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: var(--global-navbar-bg-color);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.navbar.navbar-over-hero:not(.is-scrolled) {
+  background-color: transparent;
+  border-bottom-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  .navbar-brand,
+  .navbar-nav .nav-item .nav-link,
+  #light-toggle,
+  #search-toggle {
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .navbar-brand:hover,
+  .navbar-nav .nav-item .nav-link:hover,
+  .navbar-nav .nav-item.active > .nav-link,
+  #light-toggle:hover {
+    color: #ffffff;
+  }
+
+  .navbar-toggler .icon-bar {
+    background-color: #ffffff;
+  }
+
+  .btn-pill-nav {
+    background: #ffffff;
+    color: #15191d !important;
+  }
+
+  // Collapsed mobile menu needs a surface to sit on over the photo
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing {
+    background-color: rgba(18, 21, 22, 0.88);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+// On the home page the hero runs underneath the transparent bar
+body.fixed-top-nav .hero-banner {
+  margin-top: calc(-3rem - 56px);
+}
+
+body.fixed-top-nav .hero-overlay {
+  padding-top: calc(1.5rem + 56px);
 }
 
 .navbar .dropdown-menu {
@@ -553,32 +609,51 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
-    font-family: $font-sans;
+    font-family: $font-serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    transition: color 0.2s ease;
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--global-text-color-light);
     font-family: $font-sans;
     font-size: 0.9rem;
     font-weight: 500;
-
-    &::after {
-      content: "/";
-      color: var(--global-theme-color);
-    }
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    transition: color 0.2s ease;
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-text-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
-    color: var(--global-theme-color);
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+
+  // CV pill at the end of the link list
+  .nav-item-cta {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+
+  .btn-pill-nav {
+    padding: 0.35rem 0.95rem;
+    font-size: 0.85rem;
+    background: var(--global-text-color);
+    color: var(--global-bg-color) !important;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
 
     &:hover {
-      color: var(--global-hover-color);
+      opacity: 0.88;
     }
   }
 
