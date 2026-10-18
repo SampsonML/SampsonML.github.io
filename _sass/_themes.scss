@@ -91,8 +91,8 @@ html[data-theme="dark"] {
   color-scheme: dark;
   --global-bg-color: #{$ink-bg};                 // Near-black page background
   --global-navbar-bg-color: rgba(18, 21, 22, 0.72); // Frosted navbar
-  --global-glass-bg-color: rgba(255, 255, 255, 0.08); // Frosted tiles
-  --global-glass-border-color: rgba(255, 255, 255, 0.16);
+  --global-glass-bg-color: rgba(255, 255, 255, 0.13); // Frosted tiles: tuned to match the hero panel over the photo
+  --global-glass-border-color: rgba(255, 255, 255, 0.2);
   --global-code-bg-color: #{$ink-surface};       // Code block / secondary surface
   --global-text-color: #{$ink-text};             // Primary text
   --global-text-color-light: #{$ink-text-light}; // Secondary text
