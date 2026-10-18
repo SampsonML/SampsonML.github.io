@@ -38,6 +38,18 @@ layout: default
           {% endif %}
         </div>
       </div>
+      {% if page.research_strip %}
+        <div class="research-strip">
+          {% for item in page.research_strip %}
+            <a class="research-card" href="{{ '/research-themes/' | relative_url }}">
+              <span class="research-card-number">{{ forloop.index | prepend: '0' }}</span>
+              <span class="research-card-title">{{ item.title }}</span>
+              <span class="research-card-blurb">{{ item.blurb }}</span>
+              <span class="research-card-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
   </div>
   {% if page.typing_tagline %}
@@ -63,20 +75,6 @@ layout: default
   {% endif %}
 
   <article>
-
-    <!-- Research strip -->
-    {% if page.research_strip %}
-      <section class="home-section research-strip">
-        {% for item in page.research_strip %}
-          <a class="research-card" href="{{ '/research-themes/' | relative_url }}">
-            <span class="research-card-number">{{ forloop.index | prepend: '0' }}</span>
-            <span class="research-card-title">{{ item.title }}</span>
-            <span class="research-card-blurb">{{ item.blurb }}</span>
-            <span class="research-card-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
-          </a>
-        {% endfor %}
-      </section>
-    {% endif %}
 
     <!-- Bio terminal with profile grid -->
     <section class="home-section">

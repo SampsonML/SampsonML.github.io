@@ -38,7 +38,7 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-top: -3rem; // close the container's top margin so the hero meets the navbar
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   overflow: hidden;
   // Height follows the panel plus padding; min-height keeps a band of photo above it
   height: auto;
@@ -66,15 +66,17 @@
   pointer-events: none;
   background:
     linear-gradient(to bottom, rgba(18, 21, 22, 0.55) 0, rgba(18, 21, 22, 0) 160px),
-    linear-gradient(to bottom, rgba(18, 21, 22, 0) 55%, var(--global-bg-color) 100%);
+    linear-gradient(to bottom, rgba(18, 21, 22, 0) 70%, var(--global-bg-color) 100%);
 }
 
 .hero-overlay {
   position: relative;
   display: flex;
-  align-items: flex-end; // panel sits a fixed distance above the hero's bottom edge
-  justify-content: center;
-  padding: 1.5rem 1.5rem 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; // content sits a fixed distance above the hero's bottom edge
+  gap: 1.25rem;
+  padding: 1.5rem 1.5rem 1.5rem;
   min-height: inherit;
 }
 
@@ -258,28 +260,30 @@
   margin: 0 0 1.5rem;
 }
 
-// Research strip: three linked cards under the hero
+// Research strip: three linked cards inside the hero, under the name panel,
+// so they share the photo backdrop and read as the same glass as the panel
 .research-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  position: relative;
-  margin-top: 1.25rem; // fixed gap below the hero panel
+  width: 100%;
+  max-width: $max-content-width;
+  padding: 0 15px; // matches the Bootstrap container gutter
 }
 
-// Frosted glass tiles (same surface as the hero panel) with editorial numerals
 .research-card {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1.5rem 1.5rem 1.25rem;
-  background: var(--global-glass-bg-color);
-  border: 1px solid var(--global-glass-border-color);
+  background: rgba(255, 255, 255, 0.08); // identical to .hero-content
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 18px;
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(14px) saturate(120%);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25); // same as the hero panel
-  color: var(--global-text-color) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  color: #ffffff !important;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
   text-decoration: none !important;
   transition:
     transform 0.2s ease,
@@ -292,7 +296,7 @@
     border-color: var(--global-text-color-light);
 
     .research-card-more {
-      color: var(--global-text-color);
+      color: #ffffff;
 
       i {
         transform: translateX(3px);
@@ -305,7 +309,7 @@
   font-family: $font-serif;
   font-size: 1.6rem;
   line-height: 1;
-  color: var(--global-text-color-light);
+  color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.02em;
   margin-bottom: 0.5rem;
 }
@@ -318,7 +322,7 @@
 }
 
 .research-card-blurb {
-  color: var(--global-text-color-light);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -330,7 +334,7 @@
   font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--global-text-color-light);
+  color: rgba(255, 255, 255, 0.65);
   transition: color 0.15s ease;
 
   i {
@@ -504,7 +508,6 @@
 
   .research-strip {
     grid-template-columns: 1fr;
-    margin-top: 1.25rem;
   }
 
   .page-hero {
