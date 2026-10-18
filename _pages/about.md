@@ -6,9 +6,9 @@ subtitle:
 typing_tagline: "using the foundations of physics to build artificial intelligence."
 
 research_strip:
-  - title: Latent dynamical systems
-    blurb: Compact, physically meaningful spaces in which complex systems evolve.
-    icon: fa-solid fa-wave-square
+  - title: Continual learning
+    blurb: Learning systems that adapt over time, accumulating knowledge rather than being retrained from scratch.
+    icon: fa-solid fa-arrows-rotate
   - title: Physics-informed world models
     blurb: Models that capture generative and causal structure, not just patterns.
     icon: fa-solid fa-atom

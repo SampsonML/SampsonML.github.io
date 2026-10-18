@@ -10,13 +10,22 @@ layout: default
         {% if page.hero_eyebrow %}
           <p class="hero-eyebrow">{{ page.hero_eyebrow }}</p>
         {% endif %}
-        <h1 class="hero-title">
-          {% if site.title == 'blank' %}
-            {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
-          {% else %}
-            {{ site.title }}
+        <div class="hero-identity">
+          {% if page.profile and page.profile.image %}
+            <img
+              class="hero-portrait"
+              src="{{ page.profile.image | prepend: 'assets/img/' | relative_url }}"
+              alt="Portrait of {{ site.first_name }} {{ site.last_name }}"
+            />
           {% endif %}
-        </h1>
+          <h1 class="hero-title">
+            {% if site.title == 'blank' %}
+              {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+            {% else %}
+              {{ site.title }}
+            {% endif %}
+          </h1>
+        </div>
         {% if page.typing_tagline %}
           <p class="hero-subhead">
             <span id="typed-tagline"></span><span id="typing-cursor">|</span>
@@ -72,29 +81,10 @@ layout: default
     <section class="home-section">
       <h2 class="section-heading">About</h2>
       <div class="section-body">
-        <div class="bio-grid">
-          <div class="bio-grid-text">{{ content }}</div>
-          {% if page.profile %}
-          <div class="bio-grid-profile">
-            {% if page.profile.image %}
-              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-              {% if page.profile.image_circular %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-              {% else %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-              {% endif %}
-              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-              {%
-                include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-                cache_bust=true
-              %}
-            {% endif %}
-            {% if page.profile.more_info %}
-              <div class="more-info">{{ page.profile.more_info }}</div>
-            {% endif %}
-          </div>
-          {% endif %}
-        </div>
+        <div class="bio-text">{{ content }}</div>
+        {% if page.profile and page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
       </div>
     </section>
 

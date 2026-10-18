@@ -103,6 +103,26 @@
   margin: 0 0 1.25rem;
 }
 
+// Portrait circle beside the name
+.hero-identity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-portrait {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
 .hero-title {
   font-family: $font-serif-display;
   font-weight: 400;
@@ -110,7 +130,8 @@
   line-height: 1;
   letter-spacing: -0.015em;
   color: #ffffff !important;
-  margin: 0 0 1.25rem;
+  margin: 0;
+  text-align: left;
 }
 
 .hero-subhead {
@@ -238,7 +259,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin-top: -1rem;
+  position: relative;
+  margin-top: -3rem; // pull the tiles up close to the hero panel
 }
 
 .research-card {
@@ -394,26 +416,29 @@
 }
 
 // Bio grid layout
-.bio-grid {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 2.5rem;
-  align-items: start;
-}
+.bio-text {
+  max-width: 820px;
 
-.bio-grid-profile {
-  text-align: center;
-
-  img {
-    width: 100%;
-    border-radius: 16px;
-    box-shadow: none;
+  // Lead sentence carries a little more weight than the rest of the bio
+  > p:first-of-type {
+    font-size: 1.2rem;
+    line-height: 1.6;
   }
 }
 
 @media (max-width: 768px) {
-  .bio-grid {
-    grid-template-columns: 1fr;
+  .hero-identity {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-portrait {
+    width: 96px;
+    height: 96px;
+  }
+
+  .hero-title {
+    text-align: center;
   }
 
   .hero-overlay {
@@ -439,7 +464,7 @@
 
   .research-strip {
     grid-template-columns: 1fr;
-    margin-top: 0;
+    margin-top: -2.5rem;
   }
 
   .page-hero {
