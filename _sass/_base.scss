@@ -42,7 +42,7 @@
   overflow: hidden;
   // Height follows the panel plus padding; min-height keeps a band of photo above it
   height: auto;
-  min-height: clamp(520px, 66vh, 760px);
+  min-height: clamp(440px, 52vh, 600px);
 
   background: var(--global-bg-color);
 
@@ -59,12 +59,14 @@
   }
 }
 
-// Photo is shown as-is; only the bottom edge fades into the page background
+// Photo is shown as-is apart from a short scrim under the navbar and a fade at the bottom edge
 .hero-fade {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(18, 21, 22, 0) 55%, var(--global-bg-color) 100%);
+  background:
+    linear-gradient(to bottom, rgba(18, 21, 22, 0.55) 0, rgba(18, 21, 22, 0) 160px),
+    linear-gradient(to bottom, rgba(18, 21, 22, 0) 55%, var(--global-bg-color) 100%);
 }
 
 .hero-overlay {
@@ -465,6 +467,13 @@
     height: 96px;
   }
 
+  .navbar.navbar-light .navbar-nav {
+    align-items: flex-end;
+    border-radius: 16px;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.5rem;
+  }
+
   .hero-title {
     text-align: center;
   }
@@ -474,7 +483,7 @@
   }
 
   .hero-banner {
-    min-height: clamp(460px, 60vh, 640px);
+    min-height: clamp(420px, 50vh, 560px);
   }
 
   .hero-content {
@@ -804,13 +813,10 @@ ul.task-list input[type="checkbox"] {
     color: #15191d !important;
   }
 
-  // Collapsed mobile menu needs a surface to sit on over the photo
-  .navbar-collapse.show,
-  .navbar-collapse.collapsing {
-    background-color: rgba(18, 21, 22, 0.88);
-    border-radius: 12px;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
+  // Over the photo the capsule uses a darker glass so links stay legible on light sky
+  .navbar-nav {
+    background: rgba(18, 21, 22, 0.45);
+    border-color: rgba(255, 255, 255, 0.18);
   }
 }
 
@@ -820,7 +826,7 @@ body.fixed-top-nav .hero-banner {
 }
 
 body.fixed-top-nav .hero-overlay {
-  padding-top: calc(5rem + 56px);
+  padding-top: calc(2.5rem + 56px);
 }
 
 .navbar .dropdown-menu {
@@ -867,13 +873,27 @@ body.fixed-top-nav .hero-overlay {
     transition: color 0.2s ease;
   }
 
+  // Links, CV circle and theme toggle sit together in one frosted capsule
+  .navbar-nav {
+    align-items: center;
+    gap: 0.1rem;
+    padding: 0.3rem 0.5rem 0.3rem 0.75rem;
+    border-radius: 9999px;
+    background: var(--global-glass-bg-color);
+    border: 1px solid var(--global-glass-border-color);
+    backdrop-filter: blur(14px) saturate(120%);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+    transition:
+      background-color 0.25s ease,
+      border-color 0.25s ease;
+  }
+
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color-light);
     font-family: $font-sans;
     font-size: 0.9rem;
     font-weight: 500;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding: 0.35rem 0.75rem;
     transition: color 0.2s ease;
 
     &:hover {
@@ -889,6 +909,12 @@ body.fixed-top-nav .hero-overlay {
 
   // CV pill at the end of the link list
   .nav-item-cta {
+    display: flex;
+    align-items: center;
+    margin-left: 0.35rem;
+  }
+
+  .toggle-container {
     display: flex;
     align-items: center;
     margin-left: 0.5rem;
@@ -1005,6 +1031,13 @@ body.fixed-top-nav .hero-overlay {
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
+  line-height: 1;
+
+  // Theme rules give these icons top padding for the old bar; the capsule centres them instead
+  i {
+    padding: 0 0 0 4px !important;
+    font-size: 1.05rem;
+  }
 
   &:hover {
     color: var(--global-hover-color);
