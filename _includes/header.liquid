@@ -106,9 +106,9 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-          <!-- CV call-to-action -->
-          <li class="nav-item nav-item-cta {% if page.url contains '/cv/' %}active{% endif %}">
-            <a class="btn-pill btn-pill-nav" href="{{ '/cv/' | relative_url }}">CV</a>
+          <!-- CV (kept last, as a plain link) -->
+          <li class="nav-item {% if page.url contains '/cv/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/cv/' | relative_url }}">cv</a>
           </li>
           {% if site.search_enabled %}
             <!-- Search -->
