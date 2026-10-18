@@ -59,14 +59,12 @@
   }
 }
 
-// Photo is shown as-is apart from a short scrim under the navbar and a fade at the bottom edge
+// Photo is shown as-is; only the bottom edge fades into the page background
 .hero-fade {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background:
-    linear-gradient(to bottom, rgba(18, 21, 22, 0.55) 0, rgba(18, 21, 22, 0) 160px),
-    linear-gradient(to bottom, rgba(18, 21, 22, 0) 70%, var(--global-bg-color) 100%);
+  background: linear-gradient(to bottom, rgba(18, 21, 22, 0) 70%, var(--global-bg-color) 100%);
 }
 
 .hero-overlay {
@@ -275,9 +273,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1.5rem 1.5rem 1.25rem;
-  background: rgba(18, 21, 22, 0.72); // dark charcoal glass
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.08); // identical to .hero-content
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 18px;
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(14px) saturate(120%);
@@ -294,24 +292,7 @@
     transform: translateY(-2px);
     box-shadow: 0 20px 48px rgba(0, 0, 0, 0.24);
     border-color: var(--global-text-color-light);
-
-    .research-card-more {
-      color: #ffffff;
-
-      i {
-        transform: translateX(3px);
-      }
-    }
   }
-}
-
-.research-card-number {
-  font-family: $font-serif;
-  font-size: 1.6rem;
-  line-height: 1;
-  color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 0.02em;
-  margin-bottom: 0.5rem;
 }
 
 .research-card-title {
@@ -327,23 +308,6 @@
   line-height: 1.5;
 }
 
-.research-card-more {
-  margin-top: auto;
-  padding-top: 1rem;
-  align-self: flex-end;
-  font-size: 0.82rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.65);
-  transition: color 0.15s ease;
-
-  i {
-    font-size: 0.75em;
-    margin-left: 0.25rem;
-    display: inline-block;
-    transition: transform 0.15s ease;
-  }
-}
 
 // Slim hero band for inner pages (title + description over the same photo)
 .page-hero {
@@ -488,9 +452,9 @@
     min-height: clamp(460px, 58vh, 640px);
   }
 
-  // Phones: the stacked panel needs more room below the navbar
+  // Phones: the stacked panel needs a little more room below the navbar
   body.fixed-top-nav .hero-overlay {
-    padding-top: calc(4.5rem + 56px);
+    padding-top: 3rem;
   }
 
   .hero-content {
@@ -789,13 +753,13 @@ ul.task-list input[type="checkbox"] {
     border-color 0.25s ease;
 }
 
-// On the home page the hero runs underneath the bar
+// On the home page the hero starts directly below the navbar
 body.fixed-top-nav .hero-banner {
-  margin-top: calc(-3rem - 56px);
+  margin-top: -3rem;
 }
 
 body.fixed-top-nav .hero-overlay {
-  padding-top: calc(2.5rem + 56px);
+  padding-top: 2.5rem;
 }
 
 .navbar .dropdown-menu {
