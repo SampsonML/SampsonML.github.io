@@ -44,7 +44,8 @@
 
   background: var(--global-bg-color);
 
-  img {
+  // Only the background photo (a direct child); the portrait inside the panel is styled separately
+  > img {
     width: 100%;
     height: 100%;
     display: block;
@@ -112,13 +113,16 @@
   margin-bottom: 0.5rem;
 }
 
-.hero-portrait {
+.hero-banner .hero-portrait {
+  position: static;
+  display: block;
   width: 120px;
   height: 120px;
   flex-shrink: 0;
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 18%;
+  opacity: 1;
   border: 2px solid rgba(255, 255, 255, 0.55);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
@@ -432,7 +436,7 @@
     gap: 1rem;
   }
 
-  .hero-portrait {
+  .hero-banner .hero-portrait {
     width: 96px;
     height: 96px;
   }
