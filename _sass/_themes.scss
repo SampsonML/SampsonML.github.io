@@ -44,9 +44,9 @@
   --global-danger-block-text: #{$red-gruv-bright};
   --global-danger-block-title: #{$red-gruv};
 
-    // change title colour 
+  // Headings stay neutral; colour is reserved for links
   .post-title {
-    color: #{$cyan-gruv-medium} !important; 
+    color: var(--global-text-color) !important;
   }
 
   #light-toggle-system {
@@ -81,13 +81,12 @@
     z-index: $back-to-top-z-index;
   }
 
-  // Light mode: force white text inside terminal panes
-  .section-terminal-body,
+  // Light mode: force light text inside the hero pane (it sits on a dark photo)
   .hero-terminal-body {
-    color: #{$fg-color};
+    color: #{$ink-text};
 
     p, span, div, li, td, th, strong, em, h1, h2, h3, h4, h5, h6 {
-      color: #{$fg-color};
+      color: #{$ink-text};
     }
 
     a {
@@ -100,19 +99,19 @@
 // --- GRUVBOX DARK THEME (The main transformation) ---
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{$bg-color-hard};          // Gruvbox Background (1d2021)
-  --global-code-bg-color: #{$bg-color-medium};   // Gruvbox Code Block/Secondary BG (282828)
-  --global-text-color: #{$fg-color};             // Gruvbox Foreground Text (ebdbb2)
-  --global-text-color-light: #{$grey-gruv-0};    // Lighter Gruvbox Grey (a89984) - for less important text
+  --global-bg-color: #{$ink-bg};                 // Near-black page background
+  --global-code-bg-color: #{$ink-surface};       // Code block / secondary surface
+  --global-text-color: #{$ink-text};             // Primary text
+  --global-text-color-light: #{$ink-text-light}; // Secondary text
   --global-theme-color: #{$cyan-gruv-bright};  // Gruvbox Theme Color (fe8019) - Often used for links/accents
   --global-hover-color: #{$cyan-gruv};         // Darker Gruvbox Orange for hover
   --global-hover-text-color: #{$fg-color};       // Foreground text on hover
-  --global-footer-bg-color: #{$bg-color-medium}; // Secondary Gruvbox BG (282828)
-  --global-footer-text-color: #{$grey-gruv-1};   // Darker Gruvbox Grey (928374)
+  --global-footer-bg-color: #{$ink-surface};     // Footer surface
+  --global-footer-text-color: #{$ink-text-light}; // Footer text
   --global-footer-link-color: #{$cyan-gruv-bright}; // Gruvbox Orange for footer links
   --global-distill-app-color: #{$grey-gruv-0};   // Gruvbox Grey
-  --global-divider-color: #{$grey-gruv-2};       // Gruvbox Divider/Border (3c3836)
-  --global-card-bg-color: #{$bg-color-medium};   // Gruvbox Card Background (282828)
+  --global-divider-color: #{$ink-divider};       // 1px borders
+  --global-card-bg-color: #{$ink-surface};       // Card / pane background
   --global-back-to-top-bg-color: rgba(
     #{color.channel($fg-color, "red", $space: rgb)}, // Use FG color for transparency base
     #{color.channel($fg-color, "green", $space: rgb)},
@@ -120,8 +119,8 @@ html[data-theme="dark"] {
     0.15 // Less opaque in a dark theme
   );
   --global-back-to-top-text-color: #{$fg-color}; // Gruvbox Foreground
-  --global-newsletter-bg-color: #{$bg-color-medium};
-  --global-newsletter-text-color: #{$fg-color};
+  --global-newsletter-bg-color: #{$ink-surface};
+  --global-newsletter-text-color: #{$ink-text};
 
   // Gruvbox Accent Blocks (Using the bright Gruvbox colors for notice blocks)
   --global-tip-block: #{$green-gruv-bright}; // Green
@@ -137,14 +136,13 @@ html[data-theme="dark"] {
   --global-danger-block-text: #{$red-gruv-bright};
   --global-danger-block-title: #{$red-gruv};
 
-  // change title colour 
+  // Headings stay neutral; colour is reserved for links
   .post-title {
-    color: #{$cyan-gruv-bright} !important; 
+    color: #{$ink-text} !important;
   }
 
-  // change the h2 header colours 
   h2 a {
-    color: #{$cyan-gruv-bright} !important; 
+    color: #{$ink-text} !important;
   }
 
   .only-light {

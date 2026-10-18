@@ -8,6 +8,13 @@
 // Backgrounds and Foreground
 $bg-color-hard: #1d2021 !default;
 $bg-color-medium: #282828 !default;
+
+// Near-black "ink" palette used by the dark theme (quieter than Gruvbox hard)
+$ink-bg: #121516 !default; // page background
+$ink-surface: #1a1e20 !default; // cards, panes, code blocks
+$ink-divider: #2a2f32 !default; // 1px borders
+$ink-text: #e6e3dc !default; // primary text, slightly warm off-white
+$ink-text-light: #9aa0a6 !default; // secondary text
 $fg-color: #ebdbb2 !default; // Foreground text
 
 // Primary Accent Colors

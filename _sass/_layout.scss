@@ -6,6 +6,9 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  // The full-bleed hero uses 100vw; keep a vertical scrollbar from causing horizontal scroll.
+  overflow-x: hidden;
+  overflow-x: clip;
 
   h1,
   h2,

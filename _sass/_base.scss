@@ -24,32 +24,40 @@
 
 .vision-label {
   font-weight: bold;
-  color: #8ec07c !important;
+  color: var(--global-text-color) !important;
   letter-spacing: 0.05em;
   font-size: 1.1rem;
   margin-top: 1rem;
   display: inline-block;
 }
 
-// Hero banner
+// Hero banner: full-bleed photo that fades into the page background
 .hero-banner {
   position: relative;
-  width: 100%;
-  margin-bottom: 1.5rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: -3rem; // close the container's top margin so the hero meets the navbar
+  margin-bottom: 2.5rem;
   overflow: hidden;
-  border-radius: 6px;
-  min-height: 250px;
+  height: clamp(420px, 62vh, 720px);
 
   img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
+    object-position: 30% 55%;
     position: absolute;
     top: 0;
     left: 0;
-    filter: brightness(0.4);
   }
+}
+
+.hero-fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 55%, var(--global-bg-color) 100%);
 }
 
 .hero-overlay {
@@ -58,24 +66,25 @@
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  min-height: 250px;
+  height: 100%;
 }
 
 .hero-terminal {
   font-family: monospace;
-  background: rgba(20, 20, 20, 0.75);
-  border: 1px solid rgba(142, 192, 124, 0.4);
-  border-radius: 6px;
+  background: rgba(14, 16, 18, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   max-width: 680px;
   width: 100%;
-  box-shadow: 0 0 12px rgba(142, 192, 124, 0.15);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .hero-terminal-bar {
   display: flex;
   align-items: center;
   padding: 8px 12px;
-  border-bottom: 1px solid rgba(142, 192, 124, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   gap: 6px;
 }
 
@@ -103,7 +112,7 @@
 
   .post-title {
     margin: 0.2rem 0 0.4rem;
-    color: #8ec07c !important;
+    color: #ffffff !important;
     font-size: 2.2rem;
   }
 
@@ -120,10 +129,9 @@
 // Section terminal panes
 .section-terminal {
   font-family: monospace;
-  background: rgba(20, 20, 20, 0.75);
-  border: 1px solid rgba(142, 192, 124, 0.4);
-  border-radius: 6px;
-  box-shadow: 0 0 12px rgba(142, 192, 124, 0.15);
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
   margin-bottom: 1.5rem;
 }
 
@@ -131,7 +139,7 @@
   display: flex;
   align-items: center;
   padding: 8px 12px;
-  border-bottom: 1px solid rgba(142, 192, 124, 0.2);
+  border-bottom: 1px solid var(--global-divider-color);
   gap: 6px;
 }
 
