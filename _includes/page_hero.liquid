@@ -1,0 +1,30 @@
+{% comment %}
+  Slim hero band for inner pages. Uses page.hero_title / page.description by
+  default; pass title=, description=, pdf= or inset=true to override.
+{% endcomment %}
+{% assign hero_title = include.title | default: page.hero_title | default: page.title %}
+{% assign hero_description = include.description | default: page.description %}
+<div class="page-hero{% if include.inset %} page-hero-inset{% endif %}">
+  <img src="{{ 'assets/img/hero_bg.jpg' | relative_url }}" alt="" />
+  <div class="page-hero-fade"></div>
+  <div class="page-hero-content">
+    <h1 class="page-hero-title">{{ hero_title }}</h1>
+    {% if hero_description and hero_description != blank %}
+      <p class="page-hero-description">{{ hero_description }}</p>
+    {% endif %}
+    {% if include.pdf %}
+      <a
+        class="btn-pill btn-pill-primary page-hero-pill"
+        {% if include.pdf contains '://' %}
+          href="{{ include.pdf }}"
+        {% else %}
+          href="{{ include.pdf | prepend: 'assets/pdf/' | relative_url }}"
+        {% endif %}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-solid fa-file-pdf"></i>&nbsp;Download PDF
+      </a>
+    {% endif %}
+  </div>
+</div>

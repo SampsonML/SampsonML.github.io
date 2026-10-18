@@ -5,6 +5,17 @@ permalink: /
 subtitle:
 typing_tagline: "using the foundations of physics to build artificial intelligence."
 
+research_strip:
+  - title: Latent dynamical systems
+    blurb: Compact, physically meaningful spaces in which complex systems evolve.
+    icon: fa-solid fa-wave-square
+  - title: Physics-informed world models
+    blurb: Models that capture generative and causal structure, not just patterns.
+    icon: fa-solid fa-atom
+  - title: AI agents for discovery
+    blurb: Systems that form hypotheses, design experiments, and accelerate science.
+    icon: fa-solid fa-flask
+
 profile:
   align: right
   image: prof_pic_clean.jpg
@@ -25,7 +36,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm Matt, a final-year PhD candidate at Princeton University working with <a href="https://pmelchior.net" style="font-weight: bold; color:#8ec07c;">Prof. Peter Melchior</a> in the <a href="https://dynamical-learning-lab.github.io/" style="font-weight: bold; color:#8ec07c;">Dynamical Learning Lab</a>. My research focuses on latent dynamical systems,causal representation learning, and AI for discovery, with the goal of using principles from physics to build more capable and trainable models.
+I'm Matt, a final-year PhD candidate at Princeton University working with <a href="https://pmelchior.net" style="font-weight: bold;">Prof. Peter Melchior</a> in the <a href="https://dynamical-learning-lab.github.io/" style="font-weight: bold;">Dynamical Learning Lab</a>. My research focuses on latent dynamical systems,causal representation learning, and AI for discovery, with the goal of using principles from physics to build more capable and trainable models.
 
 Prior to Princeton, I developed large-scale simulations of complex physical systems at the Australian National University.
 

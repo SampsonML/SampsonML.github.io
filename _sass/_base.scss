@@ -104,8 +104,8 @@
 }
 
 .hero-title {
-  font-family: $font-serif;
-  font-weight: 500;
+  font-family: $font-serif-display;
+  font-weight: 400;
   font-size: clamp(3rem, 7vw, 5rem);
   line-height: 1;
   letter-spacing: -0.015em;
@@ -129,18 +129,18 @@
 
 .hero-actions {
   display: flex;
-  gap: 0.35rem;
+  gap: 0.5rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
   // CV sits as a circle, the same size as the social icon buttons
   .btn-pill-primary {
-    width: 2.35rem;
-    height: 2.35rem;
+    width: 3.5rem;
+    height: 3.5rem;
     padding: 0;
     justify-content: center;
-    font-size: 0.78rem;
+    font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: 0.02em;
   }
@@ -157,10 +157,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.35rem;
-    height: 2.35rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 9999px;
-    font-size: 1.1rem;
+    font-size: 1.65rem;
     background: #e6e3dc;
     color: #15191d !important;
     text-decoration: none !important;
@@ -231,6 +231,137 @@
   letter-spacing: -0.01em;
   color: var(--global-text-color);
   margin: 0 0 1.5rem;
+}
+
+// Research strip: three linked cards under the hero
+.research-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: -1rem;
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem 1.5rem 1.4rem;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 14px;
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    border-color: var(--global-text-color-light);
+  }
+}
+
+.research-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 10px;
+  background: var(--global-code-bg-color);
+  color: var(--global-theme-color);
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.research-card-title {
+  font-family: $font-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.research-card-blurb {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+// Slim hero band for inner pages (title + description over the same photo)
+.page-hero {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+  height: 260px;
+  overflow: hidden;
+  background: var(--global-bg-color);
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 45%;
+    opacity: 0.55;
+  }
+
+  &.page-hero-inset {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 18px;
+    height: 220px;
+  }
+}
+
+.page-hero-fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, rgba(18, 21, 22, 0) 55%, var(--global-bg-color) 100%),
+    linear-gradient(to bottom, rgba(18, 21, 22, 0.6) 0%, rgba(18, 21, 22, 0.45) 100%);
+}
+
+.page-hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+}
+
+.page-hero-title {
+  font-family: $font-serif;
+  font-weight: 500;
+  font-size: clamp(2.2rem, 4.5vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: #ffffff !important;
+  margin: 0;
+}
+
+.page-hero-description {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 620px;
+  margin: 0.75rem 0 0;
+}
+
+.page-hero-pill {
+  margin-top: 1.1rem;
+  font-size: 0.85rem;
+  padding: 0.45rem 1.1rem;
 }
 
 // Legacy terminal panes (still used on other pages): transparent and borderless
@@ -304,6 +435,15 @@
 
   .home-section {
     margin-bottom: 3.5rem;
+  }
+
+  .research-strip {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .page-hero {
+    height: 200px;
   }
 }
 
@@ -709,12 +849,14 @@ body.fixed-top-nav .hero-overlay {
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.02em;
-    background: #e6e3dc;
-    color: #15191d !important;
-    transition: background-color 0.2s ease;
+    background: var(--global-text-color);
+    color: var(--global-bg-color) !important;
+    transition:
+      background-color 0.2s ease,
+      opacity 0.2s ease;
 
     &:hover {
-      background: #ffffff;
+      opacity: 0.85;
     }
   }
 
@@ -1153,10 +1295,27 @@ footer.sticky-bottom {
     padding: 0;
     margin-top: 0;
 
+    // Each entry is a card that lifts slightly on hover
     li {
       margin-bottom: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--global-card-bg-color);
+      border: 1px solid var(--global-divider-color);
+      border-radius: 14px;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+        border-color: var(--global-text-color-light);
+      }
 
       .preview {
+        border-radius: 8px;
+        box-shadow: none !important;
       }
 
       .abbr {
@@ -1184,10 +1343,26 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-family: $font-serif;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 1.25;
+        margin-bottom: 0.35rem;
+      }
+
+      .periodical {
+        color: var(--global-text-color-light);
+        font-size: 0.9rem;
       }
 
       .author {
+        color: var(--global-text-color-light);
+        font-size: 0.95rem;
+        margin-bottom: 0.25rem;
+
+        > em {
+          color: var(--global-text-color);
+        }
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
@@ -1215,18 +1390,25 @@ footer.sticky-bottom {
       }
 
       .links {
+        margin-top: 0.6rem;
+
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          margin-left: 0;
+          color: var(--global-text-color-light);
+          border: 1px solid var(--global-divider-color);
+          border-radius: 9999px;
+          font-family: $font-sans;
+          font-size: 0.78rem;
+          font-weight: 500;
+          letter-spacing: 0.02em;
+          padding: 0.25rem 0.85rem;
+          margin: 0 0.35rem 0.35rem 0;
+          transition:
+            color 0.15s ease,
+            border-color 0.15s ease;
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: var(--global-text-color);
+            border-color: var(--global-text-color-light);
           }
         }
         a.award.btn {
