@@ -8,8 +8,8 @@
   gap: 0.7rem;
   font-family: $font-sans;
   font-size: 1.1rem;
-  color: #8ec07c !important;
-  border: 1px solid rgba(142, 192, 124, 0.5);
+  color: var(--global-theme-color) !important;
+  border: 1px solid var(--global-divider-color);
   border-radius: 20px;
   padding: 0.3rem 0.9rem;
   margin: 0.5rem 0;

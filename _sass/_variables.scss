@@ -15,6 +15,14 @@ $ink-surface: #1a1e20 !default; // cards, panes, code blocks
 $ink-divider: #2a2f32 !default; // 1px borders
 $ink-text: #e6e3dc !default; // primary text, slightly warm off-white
 $ink-text-light: #9aa0a6 !default; // secondary text
+// Dark-mode accent for links and highlighted text. Swap both values to try another:
+//   amber     #d9a066 / #e8b887   (default: echoes the sunrise glow in the hero)
+//   teal      #5fa8a3 / #7fc1bc   (same family as the light-mode accent)
+//   rose      #c98a8a / #dba6a6
+//   ice blue  #8fb3d9 / #a9c7e6
+//   cream     #e6dcc8 / #ffffff   (near-monochrome; links read by underline)
+$ink-accent: #d9a066 !default;
+$ink-accent-hover: #e8b887 !default;
 
 // Light "paper" palette (warm off-white, near-black text, one muted accent)
 $paper-bg: #faf8f5 !default;

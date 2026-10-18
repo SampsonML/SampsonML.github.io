@@ -92,12 +92,12 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{$ink-surface};       // Code block / secondary surface
   --global-text-color: #{$ink-text};             // Primary text
   --global-text-color-light: #{$ink-text-light}; // Secondary text
-  --global-theme-color: #{$cyan-gruv-bright};  // Gruvbox Theme Color (fe8019) - Often used for links/accents
-  --global-hover-color: #{$cyan-gruv};         // Darker Gruvbox Orange for hover
+  --global-theme-color: #{$ink-accent};        // Links and highlighted text
+  --global-hover-color: #{$ink-accent-hover};  // Link hover
   --global-hover-text-color: #{$fg-color};       // Foreground text on hover
   --global-footer-bg-color: #{$ink-surface};     // Footer surface
   --global-footer-text-color: #{$ink-text-light}; // Footer text
-  --global-footer-link-color: #{$cyan-gruv-bright}; // Gruvbox Orange for footer links
+  --global-footer-link-color: #{$ink-accent};    // Footer links
   --global-distill-app-color: #{$grey-gruv-0};   // Gruvbox Grey
   --global-divider-color: #{$ink-divider};       // 1px borders
   --global-card-bg-color: #{$ink-surface};       // Card / pane background
