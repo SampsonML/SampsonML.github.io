@@ -126,23 +126,22 @@
   gap: 0.35rem;
   align-items: center;
 
+  // Same surface as the CV pill: light button, dark icon
   a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2.35rem;
+    height: 2.35rem;
     border-radius: 9999px;
-    font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 1.1rem;
+    background: #e6e3dc;
+    color: #15191d !important;
     text-decoration: none !important;
-    transition:
-      background-color 0.15s ease,
-      color 0.15s ease;
+    transition: background-color 0.15s ease;
 
     &:hover {
-      color: #ffffff !important;
-      background-color: rgba(255, 255, 255, 0.12);
+      background: #ffffff;
     }
   }
 }
