@@ -69,9 +69,10 @@ layout: default
       <section class="home-section research-strip">
         {% for item in page.research_strip %}
           <a class="research-card" href="{{ '/research-themes/' | relative_url }}">
-            <span class="research-card-icon"><i class="{{ item.icon }}"></i></span>
+            <span class="research-card-number">{{ forloop.index | prepend: '0' }}</span>
             <span class="research-card-title">{{ item.title }}</span>
             <span class="research-card-blurb">{{ item.blurb }}</span>
+            <span class="research-card-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
           </a>
         {% endfor %}
       </section>

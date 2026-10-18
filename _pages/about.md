@@ -8,13 +8,10 @@ typing_tagline: "using the foundations of physics to build artificial intelligen
 research_strip:
   - title: Continual learning
     blurb: Learning systems that adapt over time, accumulating knowledge rather than being retrained from scratch.
-    icon: fa-solid fa-arrows-rotate
   - title: Physics-informed world models
     blurb: Models that capture generative and causal structure, not just patterns.
-    icon: fa-solid fa-atom
   - title: AI agents for discovery
     blurb: Systems that form hypotheses, design experiments, and accelerate science.
-    icon: fa-solid fa-flask
 
 profile:
   align: right

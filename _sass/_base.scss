@@ -38,9 +38,11 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-top: -3rem; // close the container's top margin so the hero meets the navbar
-  margin-bottom: 4rem;
+  margin-bottom: 0;
   overflow: hidden;
-  height: clamp(520px, 78vh, 840px);
+  // Height follows the panel plus padding; min-height keeps a band of photo above it
+  height: auto;
+  min-height: clamp(520px, 66vh, 760px);
 
   background: var(--global-bg-color);
 
@@ -54,28 +56,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.78; // let the page colour bleed through for a softer, foggier image
   }
 }
 
-// Two layers: a soft fog veil across the whole photo, then a fade into the page
+// Photo is shown as-is; only the bottom edge fades into the page background
 .hero-fade {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background:
-    linear-gradient(to bottom, rgba(18, 21, 22, 0) 45%, var(--global-bg-color) 100%),
-    radial-gradient(ellipse 80% 70% at 50% 60%, rgba(120, 125, 135, 0.22) 0%, rgba(120, 125, 135, 0) 70%),
-    linear-gradient(to bottom, rgba(18, 21, 22, 0.5) 0%, rgba(18, 21, 22, 0.3) 100%);
+  background: linear-gradient(to bottom, rgba(18, 21, 22, 0) 55%, var(--global-bg-color) 100%);
 }
 
 .hero-overlay {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end; // panel sits a fixed distance above the hero's bottom edge
   justify-content: center;
-  padding: 1.5rem;
-  height: 100%;
+  padding: 1.5rem 1.5rem 1.25rem;
+  min-height: inherit;
 }
 
 // Hero copy: eyebrow, serif headline, subhead, pill buttons (no container)
@@ -264,17 +262,21 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   position: relative;
-  margin-top: -3rem; // pull the tiles up close to the hero panel
+  margin-top: 1.25rem; // fixed gap below the hero panel
 }
 
+// Frosted glass tiles (same surface as the hero panel) with editorial numerals
 .research-card {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1.5rem 1.5rem 1.4rem;
-  background: var(--global-card-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 14px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  background: var(--global-glass-bg-color);
+  border: 1px solid var(--global-glass-border-color);
+  border-radius: 18px;
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
   color: var(--global-text-color) !important;
   text-decoration: none !important;
   transition:
@@ -284,27 +286,31 @@
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.24);
     border-color: var(--global-text-color-light);
+
+    .research-card-more {
+      color: var(--global-text-color);
+
+      i {
+        transform: translateX(3px);
+      }
+    }
   }
 }
 
-.research-card-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 10px;
-  background: var(--global-code-bg-color);
-  color: var(--global-theme-color);
-  font-size: 1.05rem;
-  margin-bottom: 0.25rem;
+.research-card-number {
+  font-family: $font-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--global-text-color-light);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
 }
 
 .research-card-title {
   font-family: $font-serif;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -313,6 +319,24 @@
   color: var(--global-text-color-light);
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.research-card-more {
+  margin-top: auto;
+  padding-top: 1rem;
+  align-self: flex-end;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+  transition: color 0.15s ease;
+
+  i {
+    font-size: 0.75em;
+    margin-left: 0.25rem;
+    display: inline-block;
+    transition: transform 0.15s ease;
+  }
 }
 
 // Slim hero band for inner pages (title + description over the same photo)
@@ -450,7 +474,7 @@
   }
 
   .hero-banner {
-    height: clamp(460px, 70vh, 640px);
+    min-height: clamp(460px, 60vh, 640px);
   }
 
   .hero-content {
@@ -468,7 +492,7 @@
 
   .research-strip {
     grid-template-columns: 1fr;
-    margin-top: -2.5rem;
+    margin-top: 1.25rem;
   }
 
   .page-hero {
@@ -796,7 +820,7 @@ body.fixed-top-nav .hero-banner {
 }
 
 body.fixed-top-nav .hero-overlay {
-  padding-top: calc(1.5rem + 56px);
+  padding-top: calc(5rem + 56px);
 }
 
 .navbar .dropdown-menu {
