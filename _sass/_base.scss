@@ -114,9 +114,37 @@
 
 .hero-actions {
   display: flex;
-  gap: 0.75rem;
+  gap: 1.25rem;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+}
+
+// Social icons in the hero row, next to the CV pill
+.hero-social {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-decoration: none !important;
+    transition:
+      background-color 0.15s ease,
+      color 0.15s ease;
+
+    &:hover {
+      color: #ffffff !important;
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+  }
 }
 
 .btn-pill {

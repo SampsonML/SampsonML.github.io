@@ -19,12 +19,14 @@ layout: default
         </h1>
         {% if page.typing_tagline %}
           <p class="hero-subhead">
-            <span class="terminal-prompt">$</span>&nbsp;<span id="typed-tagline"></span><span id="typing-cursor">|</span>
+            <span id="typed-tagline"></span><span id="typing-cursor">|</span>
           </p>
         {% endif %}
         <div class="hero-actions">
-          <a class="btn-pill btn-pill-primary" href="{{ '/publications/' | relative_url }}">Publications</a>
-          <a class="btn-pill btn-pill-ghost" href="{{ '/cv/' | relative_url }}">CV</a>
+          <a class="btn-pill btn-pill-primary" href="{{ '/cv/' | relative_url }}">CV</a>
+          {% if page.social %}
+            <div class="hero-social">{% include social.liquid %}</div>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -76,11 +78,6 @@ layout: default
             {% endif %}
             {% if page.profile.more_info %}
               <div class="more-info">{{ page.profile.more_info }}</div>
-            {% endif %}
-            {% if page.social %}
-              <div class="social">
-                <div class="contact-icons">{% include social.liquid %}</div>
-              </div>
             {% endif %}
           </div>
           {% endif %}
