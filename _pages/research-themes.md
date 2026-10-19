@@ -20,7 +20,7 @@ I am interested in the role of machine learning in science, and the role of phys
 <div class="section-terminal">
   <div class="section-terminal-body">
     <h3 class="terminal-heading" style="margin-top:0;">Physics-informed world models</h3>
-    <p>Models that capture the generative and causal structure of physical systems, supporting intervention, counterfactual reasoning, and reliable extrapolation rather than naive pattern-matching. Currently, simplistic physical systems, one day much more.</p>
+    <p>Models that capture the generative and causal structure of physical systems, supporting intervention, counterfactual reasoning, and reliable extrapolation rather than naive pattern-matching.</p>
   </div>
 </div>
 
