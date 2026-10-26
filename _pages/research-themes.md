@@ -1,6 +1,6 @@
 ---
 layout: page
-title: research themes
+title: research
 hero_title: Research themes
 description: Three avenues through which I approach machine learning for science.
 permalink: /research-themes/

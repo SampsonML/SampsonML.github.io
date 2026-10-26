@@ -4,6 +4,7 @@ layout: default
 <div class="post">
   <div class="hero-banner">
     <img src="{{ 'assets/img/hero_bg.jpg' | relative_url }}" alt="" />
+    <canvas class="hero-lorenz" aria-hidden="true"></canvas>
     <div class="hero-fade"></div>
     <div class="hero-overlay">
       <div class="hero-content">
@@ -50,6 +51,7 @@ layout: default
       {% endif %}
     </div>
   </div>
+  <script defer src="{{ '/assets/js/lorenz.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
   {% if page.typing_tagline %}
   <style>
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
