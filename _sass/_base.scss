@@ -59,15 +59,6 @@
   }
 }
 
-// Lorenz attractor traced over the photo, beneath the glass panel and the fade
-.hero-lorenz {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
 // Photo is shown as-is; only the bottom edge fades into the page background
 .hero-fade {
   position: absolute;
