@@ -9,8 +9,8 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-research-themes",
-          title: "research themes",
+  },{id: "nav-research",
+          title: "research",
           description: "Three avenues through which I approach machine learning for science.",
           section: "Navigation",
           handler: () => {
