@@ -28,8 +28,8 @@
   color: var(--global-text-color) !important;
   letter-spacing: -0.01em;
   font-size: 1.5rem;
-  margin-top: 1rem;
-  display: inline-block;
+  margin: 0 0 0.35rem;
+  display: block;
 }
 
 // Hero banner: full-bleed photo that fades into the page background
@@ -437,8 +437,8 @@
 
 // Bio grid layout
 .bio-text {
-  // Lead sentence carries a little more weight than the rest of the bio
-  > p:first-of-type {
+  // The vision statement carries a little more weight than the rest of the bio
+  .bio-lead {
     font-size: 1.2rem;
     line-height: 1.6;
   }
