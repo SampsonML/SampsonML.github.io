@@ -5,6 +5,20 @@ layout: default
   <div class="post">
     {% include page_hero.liquid pdf=page.cv_pdf inset=true %}
 
+    {% if page.cv_pdf %}
+      {% if page.cv_pdf contains '://' %}
+        {% assign cv_pdf_url = page.cv_pdf %}
+      {% else %}
+        {% assign cv_pdf_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
+      {% endif %}
+      <div class="cv-embed">
+        <iframe src="{{ cv_pdf_url }}#view=FitH" title="Curriculum vitae (PDF)" loading="lazy"></iframe>
+        <p class="cv-embed-fallback">
+          If the document does not display, <a href="{{ cv_pdf_url }}" target="_blank" rel="noopener noreferrer">open the PDF directly</a>.
+        </p>
+      </div>
+    {% endif %}
+
     <article>
       <div class="cv">
         {% for entry in site.data.cv %}
@@ -34,6 +48,20 @@ layout: default
 {% else %}
   <div class="post">
     {% include page_hero.liquid pdf=page.cv_pdf inset=true %}
+
+    {% if page.cv_pdf %}
+      {% if page.cv_pdf contains '://' %}
+        {% assign cv_pdf_url = page.cv_pdf %}
+      {% else %}
+        {% assign cv_pdf_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
+      {% endif %}
+      <div class="cv-embed">
+        <iframe src="{{ cv_pdf_url }}#view=FitH" title="Curriculum vitae (PDF)" loading="lazy"></iframe>
+        <p class="cv-embed-fallback">
+          If the document does not display, <a href="{{ cv_pdf_url }}" target="_blank" rel="noopener noreferrer">open the PDF directly</a>.
+        </p>
+      </div>
+    {% endif %}
 
     <article>
       <div class="cv">
