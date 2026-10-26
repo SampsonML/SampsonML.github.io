@@ -38,6 +38,8 @@ latest_posts:
 To design architectures and optimization methods that enable models to develop a deep understanding of complex dynamical systems, enabling new scientific discoveries and forming the foundations for increasingly general, physics-inspired intelligence.
 {: .bio-lead}
 
+<p class="vision-label">Bio</p>
+
 I'm Matt, a final-year PhD candidate at Princeton University working with <a href="https://pmelchior.net" style="font-weight: bold;">Prof. Peter Melchior</a> in the <a href="https://dynamical-learning-lab.github.io/" style="font-weight: bold;">Dynamical Learning Lab</a>. My research focuses on latent dynamical systems, representation learning, and AI for discovery, with the goal of using principles from physics to build more capable and trainable models.
 
 Prior to Princeton, I developed large-scale simulations of complex physical systems at the Australian National University.

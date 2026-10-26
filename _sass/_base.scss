@@ -30,6 +30,11 @@
   font-size: 1.5rem;
   margin: 0 0 0.35rem;
   display: block;
+
+  // a label that follows a paragraph gets breathing room above it
+  p + & {
+    margin-top: 1.75rem;
+  }
 }
 
 // Hero banner: full-bleed photo that fades into the page background
