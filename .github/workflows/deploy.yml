@@ -67,7 +67,10 @@ permissions:
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
-    runs-on: ubuntu-latest
+    # Pinned to 24.04, the image this workflow last passed on. ubuntu-latest became 26.04 in November 2026,
+    # which has no build of the Ruby patch version below and installs ImageMagick 7 instead of 6.
+    # To move up: set ruby-version to the bare series (e.g. "3.3") and check the responsive images still build.
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
