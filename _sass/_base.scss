@@ -2,6 +2,15 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Translucent white, written out as rgba() text instead of a Sass colour.
+// In compressed output Sass shortens rgba(255, 255, 255, a) to hsla(0, 0%, 100%, a),
+// and the production CSS minifier then strips the "%" from "0%", leaving a value
+// browsers throw away. Use this for any white-with-alpha in a regular property.
+// (Values inside CSS custom properties and gradients are passed through as text already.)
+@function white-a($alpha) {
+  @return unquote("rgba(255, 255, 255, #{$alpha})");
+}
+
 .job-market-badge {
   display: inline-flex;
   align-items: center;
@@ -69,7 +78,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(18, 21, 22, 0) 70%, var(--global-bg-color) 100%);
+  background: linear-gradient(to bottom, rgba($ink-bg, 0) 70%, var(--global-bg-color) 100%);
 }
 
 .hero-overlay {
@@ -91,8 +100,8 @@
   color: #ffffff;
   padding: 2.5rem 3rem 2.25rem;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: white-a(0.08);
+  border: 1px solid white-a(0.16);
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(14px) saturate(120%);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
@@ -105,7 +114,7 @@
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.72);
+  color: white-a(0.72);
   margin: 0 0 1.25rem;
 }
 
@@ -128,7 +137,7 @@
   object-fit: cover;
   object-position: 50% 18%;
   opacity: 1;
-  border: 2px solid rgba(255, 255, 255, 0.55);
+  border: 2px solid white-a(0.55);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
@@ -148,7 +157,7 @@
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.85);
+  color: white-a(0.85);
   margin: 0 auto 2rem;
   max-width: 640px;
 
@@ -228,13 +237,13 @@
 }
 
 .btn-pill-ghost {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.28);
+  background: white-a(0.06);
+  border-color: white-a(0.28);
   color: #ffffff !important;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.6);
+    background: white-a(0.12);
+    border-color: white-a(0.6);
   }
 }
 
@@ -263,30 +272,37 @@
   margin: 0 0 1.5rem;
 }
 
-// Research strip: three linked cards inside the hero, under the name panel,
-// so they share the photo backdrop and read as the same glass as the panel
+// Research strip: four linked cards inside the hero, under the name panel,
+// so they share the photo backdrop. Four across on desktop, two by two on
+// mid widths, stacked on phones (see the max-width: 768px block below).
 .research-strip {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   width: 100%;
   max-width: $max-content-width;
   padding: 0 15px; // matches the Bootstrap container gutter
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .research-card {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.08); // identical to .hero-content
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 1.35rem 1.25rem;
+  // Colours are per theme (see _themes.scss): the cards sit where the photo fades into
+  // the page, so light mode needs dark text on pale glass and dark mode the reverse
+  background: var(--global-hero-card-bg-color);
+  border: 1px solid var(--global-hero-card-border-color);
   border-radius: 18px;
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(14px) saturate(120%);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
-  color: #ffffff !important;
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+  color: var(--global-hero-card-text-color) !important;
+  text-shadow: var(--global-hero-card-text-shadow);
   text-decoration: none !important;
   transition:
     transform 0.2s ease,
@@ -300,15 +316,19 @@
   }
 }
 
+// Both spans inherit the card colour explicitly; otherwise the global "span" rule
+// gives them the page text colour
 .research-card-title {
   font-family: $font-serif;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.2;
+  color: inherit;
 }
 
 .research-card-blurb {
-  color: rgba(255, 255, 255, 0.8);
+  color: inherit;
+  opacity: 0.82;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -349,8 +369,8 @@
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(to bottom, rgba(18, 21, 22, 0) 55%, var(--global-bg-color) 100%),
-    linear-gradient(to bottom, rgba(18, 21, 22, 0.6) 0%, rgba(18, 21, 22, 0.45) 100%);
+    linear-gradient(to bottom, rgba($ink-bg, 0) 55%, var(--global-bg-color) 100%),
+    linear-gradient(to bottom, rgba($ink-bg, 0.6) 0%, rgba($ink-bg, 0.45) 100%);
 }
 
 .page-hero-content {
@@ -378,7 +398,7 @@
 
 .page-hero-description {
   font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.82);
+  color: white-a(0.82);
   max-width: 620px;
   margin: 0.75rem 0 0;
 }

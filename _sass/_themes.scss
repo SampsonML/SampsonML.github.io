@@ -10,6 +10,12 @@
   --global-navbar-bg-color: rgba(250, 248, 245, 0.82);
   --global-glass-bg-color: rgba(255, 255, 255, 0.55);
   --global-glass-border-color: rgba(0, 0, 0, 0.08);
+  // Home-page research cards: pale glass and dark text, because in light mode
+  // the hero photo fades to the paper background behind them
+  --global-hero-card-bg-color: rgba(255, 255, 255, 0.62);
+  --global-hero-card-border-color: rgba(255, 255, 255, 0.55);
+  --global-hero-card-text-color: #{$paper-text};
+  --global-hero-card-text-shadow: none;
   --global-code-bg-color: #{$paper-surface-2};
   --global-text-color: #{$paper-text};
   --global-text-color-light: #{$paper-text-light};
@@ -90,9 +96,14 @@
 html[data-theme="dark"] {
   color-scheme: dark;
   --global-bg-color: #{$ink-bg};                 // Near-black page background
-  --global-navbar-bg-color: rgba(18, 21, 22, 0.72); // Frosted navbar
+  --global-navbar-bg-color: rgba(15, 20, 26, 0.72); // Frosted navbar ($ink-bg at 72%)
   --global-glass-bg-color: rgba(255, 255, 255, 0.13); // Frosted tiles: tuned to match the hero panel over the photo
   --global-glass-border-color: rgba(255, 255, 255, 0.2);
+  // Home-page research cards: the same glass as the hero name panel, white text
+  --global-hero-card-bg-color: rgba(255, 255, 255, 0.08);
+  --global-hero-card-border-color: rgba(255, 255, 255, 0.16);
+  --global-hero-card-text-color: #ffffff;
+  --global-hero-card-text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
   --global-code-bg-color: #{$ink-surface};       // Code block / secondary surface
   --global-text-color: #{$ink-text};             // Primary text
   --global-text-color-light: #{$ink-text-light}; // Secondary text

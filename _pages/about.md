@@ -6,12 +6,14 @@ subtitle:
 typing_tagline: "using the foundations of physics to build artificial intelligence."
 
 research_strip:
+  - title: Latent dynamics & world models
+    blurb: Physically meaningful latent spaces that capture causal structure, not just patterns.
   - title: Continual learning
     blurb: Learning systems that adapt over time, accumulating knowledge rather than being retrained from scratch.
-  - title: Physics-informed world models
-    blurb: Models that capture generative and causal structure, not just patterns.
   - title: AI agents for discovery
     blurb: Systems that form hypotheses, design experiments, and accelerate science.
+  - title: Multi-agent science
+    blurb: Groups of agents that propose, critique, and test ideas together, the way a research group does.
 
 profile:
   align: right

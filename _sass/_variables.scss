@@ -9,20 +9,20 @@
 $bg-color-hard: #1d2021 !default;
 $bg-color-medium: #282828 !default;
 
-// Near-black "ink" palette used by the dark theme (quieter than Gruvbox hard)
-$ink-bg: #121516 !default; // page background
-$ink-surface: #1a1e20 !default; // cards, panes, code blocks
-$ink-divider: #2a2f32 !default; // 1px borders
+// Navy-black "ink" palette used by the dark theme, tinted to meet the night sky in the hero photo
+$ink-bg: #0f141a !default; // page background
+$ink-surface: #161c24 !default; // cards, panes, code blocks
+$ink-divider: #262e39 !default; // 1px borders
 $ink-text: #e6e3dc !default; // primary text, slightly warm off-white
 $ink-text-light: #9aa0a6 !default; // secondary text
 // Dark-mode accent for links and highlighted text. Swap both values to try another:
-//   amber     #d9a066 / #e8b887   (default: echoes the sunrise glow in the hero)
-//   teal      #5fa8a3 / #7fc1bc   (same family as the light-mode accent)
+//   ice blue  #8fb3d9 / #a9c7e6   (default: the lit part of the hero's night sky)
+//   amber     #d9a066 / #e8b887   (picks up the sparkles on the dunes)
+//   teal      #5fa8a3 / #7fc1bc
 //   rose      #c98a8a / #dba6a6
-//   ice blue  #8fb3d9 / #a9c7e6
 //   cream     #e6dcc8 / #ffffff   (near-monochrome; links read by underline)
-$ink-accent: #d9a066 !default;
-$ink-accent-hover: #e8b887 !default;
+$ink-accent: #8fb3d9 !default;
+$ink-accent-hover: #a9c7e6 !default;
 
 // Light "paper" palette (warm off-white, near-black text, one muted accent)
 $paper-bg: #faf8f5 !default;
@@ -31,8 +31,8 @@ $paper-surface-2: #f1eee8 !default;
 $paper-text: #15191d !default;
 $paper-text-light: #6b7076 !default;
 $paper-divider: rgba(0, 0, 0, 0.08) !default;
-$paper-accent: #2f6f73 !default; // muted teal
-$paper-accent-dark: #1f5558 !default;
+$paper-accent: #1f5a7a !default; // deep sky blue, from the hero photo (previously muted teal #2f6f73 / #1f5558)
+$paper-accent-dark: #16455e !default;
 
 // Type stacks: serif for display headings, sans for body, mono for prompts and code
 $font-serif: "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif !default;
