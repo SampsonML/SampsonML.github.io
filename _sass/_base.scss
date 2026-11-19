@@ -103,8 +103,8 @@
   background: white-a(0.08);
   border: 1px solid white-a(0.16);
   // Lighter blur than the research cards (14px) so the comet behind the panel keeps some shape
-  backdrop-filter: blur(9px) saturate(120%);
-  -webkit-backdrop-filter: blur(9px) saturate(120%);
+  backdrop-filter: blur(11px) saturate(120%);
+  -webkit-backdrop-filter: blur(11px) saturate(120%);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
 }
@@ -169,37 +169,22 @@
 
 .hero-actions {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.4rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
-  // CV is the primary action: the one solid pill in the row, as tall as the icon buttons
-  .btn-pill-primary {
-    height: 3rem;
-    padding: 0 1.75rem;
-    justify-content: center;
-    font-size: 1.05rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-  }
-}
-
-// Social icons in the hero row, next to the CV pill
-.hero-social {
-  display: flex;
-  gap: 0.4rem;
-  align-items: center;
-
-  // Secondary actions: see-through glass circles with white icons, so the photo shows through
-  a {
+  // CV and the social icons are one kind of button: a see-through glass circle,
+  // so the photo shows through, with solid white lettering or icon
+  .btn-pill-primary,
+  .hero-social a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 3rem;
     height: 3rem;
+    padding: 0;
     border-radius: 9999px;
-    font-size: 1.35rem;
     background: white-a(0.08);
     border: 1px solid white-a(0.3);
     color: #ffffff !important;
@@ -213,6 +198,23 @@
       border-color: white-a(0.65);
     }
   }
+
+  .btn-pill-primary {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+
+  .hero-social a {
+    font-size: 1.35rem;
+  }
+}
+
+// Social icons in the hero row, next to the CV button
+.hero-social {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
 }
 
 .btn-pill {
@@ -464,10 +466,14 @@
   font-family: $font-sans;
 }
 
-// Bio: held to a comfortable reading measure (about 75 characters a line)
+// Bio: centred under the hero, and held to a comfortable reading measure (about 75 characters a line)
 .bio-text {
+  text-align: center;
+
   p {
     max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   // The vision statement is the page's pull quote: large serif, allowed a little wider than the body text
