@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "research",
-          description: "Three avenues through which I approach machine learning for science.",
+          description: "Four avenues through which I approach machine learning for science.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research-themes/";
