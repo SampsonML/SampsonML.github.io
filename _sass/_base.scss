@@ -177,7 +177,7 @@
   // CV and the social icons are one kind of button: a see-through glass circle,
   // so the photo shows through, with solid white lettering or icon
   .btn-pill-primary,
-  .hero-social a {
+  .hero-links a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -205,13 +205,13 @@
     letter-spacing: 0.03em;
   }
 
-  .hero-social a {
+  .hero-links a {
     font-size: 1.35rem;
   }
 }
 
 // Social icons in the hero row, next to the CV button
-.hero-social {
+.hero-links {
   display: flex;
   gap: 0.4rem;
   align-items: center;
