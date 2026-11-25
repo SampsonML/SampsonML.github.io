@@ -7,7 +7,7 @@ typing_tagline: "using the foundations of physics to build artificial intelligen
 
 research_strip:
   - title: Latent dynamics & world models
-    blurb: Physically meaningful latent spaces that capture causal structure, not just patterns.
+    blurb: Physically meaningful latent spaces that capture causal structure.
   - title: Continual learning
     blurb: Learning systems that adapt over time, accumulating knowledge rather than being retrained from scratch.
   - title: AI agents for discovery
